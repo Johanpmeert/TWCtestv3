@@ -17,7 +17,7 @@ This will work even with additional injection by solar panels or home batteries.
 A log file (TWC.log) is created and contains any and all communication with the TWC. The same output is also given on the console.
 
 I wrote this program to cope with the new 2022 Belgian regulation that will partially bill electricity according to the highest power draw in a 15 minute window every month.
-Since chartging an electric car is by far the highest power draw, regulating this charge will allow:
+Since charging an electric car is by far the highest power draw, regulating this charge will allow:
 - the car to be charged (slowly) 24/7 without any limitations needing to be set in the car/app.
 - the maximum power draw to be known in advance
 Experimenting with the setting of the aximum power draw from the grid will allow to minimize the cost while being sure that the can be fully charged.
