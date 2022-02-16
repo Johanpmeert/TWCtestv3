@@ -1,0 +1,1820 @@
+Tue Feb 15 09:41:38 CET 2022, INFO: This Master is set at Id 7777
+Tue Feb 15 09:41:38 CET 2022, INFO: SMA power meter started on Thread
+Tue Feb 15 09:41:38 CET 2022, INFO: Opening SMA multicast socket from 192.168.2.147
+Tue Feb 15 09:41:38 CET 2022, INFO: Web server started on Thread
+Tue Feb 15 09:41:38 CET 2022, INFO: Opening RS485 port COM3
+Tue Feb 15 09:41:38 CET 2022, INFO: Sending out SMA specific discovery code 534D4100000402A0FFFFFFFF0000002000000000 to multicast address 239.12.255.254/9522
+Tue Feb 15 09:41:38 CET 2022, INFO: Port COM3 opened
+Tue Feb 15 09:41:38 CET 2022, INFO: SMA power meter reports 522 Watt consumption from grid
+Tue Feb 15 09:41:44 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:41:44 CET 2022, INFO: Slave linkready block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:41:44 CET 2022, INFO: SlaveId 6388, SlaveSign A7, max amps 32
+Tue Feb 15 09:41:44 CET 2022, INFO: Sending heartbeat block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:41:45 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:41:45 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:41:47 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:41:47 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:41:47 CET 2022, INFO: Block received C0FDE0638877770902580000000000001CC0FC
+Tue Feb 15 09:41:47 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:41:47 CET 2022, INFO: Charging current 6.0A set, 0.0A used
+Tue Feb 15 09:41:50 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 4s
+Tue Feb 15 09:41:50 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:41:50 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:41:50 CET 2022, INFO: Charger ready
+Tue Feb 15 09:41:50 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:41:52 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 7s
+Tue Feb 15 09:41:52 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:42:00 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:00 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:00 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:02 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 09:42:02 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:42:09 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:42:09 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:42:12 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 26s
+Tue Feb 15 09:42:12 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:42:12 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:12 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:12 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:14 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 09:42:14 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:42:15 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:15 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:15 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:17 CET 2022, INFO: Charging current change from 8 to 22
+Tue Feb 15 09:42:17 CET 2022, INFO: Sending block C0FBE077776388090898000000000062C0
+Tue Feb 15 09:42:24 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:24 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:24 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:26 CET 2022, INFO: Charging current is set at 22A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 09:42:26 CET 2022, INFO: Sending block C0FBE077776388090898000000000062C0
+Tue Feb 15 09:42:34 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:34 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:34 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:36 CET 2022, INFO: Charging current is set at 22A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 09:42:36 CET 2022, INFO: Sending block C0FBE077776388090898000000000062C0
+Tue Feb 15 09:42:38 CET 2022, INFO: SMA power meter reports 583 Watt consumption from grid
+Tue Feb 15 09:42:44 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 09:42:44 CET 2022, INFO: Charger ready
+Tue Feb 15 09:42:44 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:46 CET 2022, INFO: Charging current is set at 22A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 09:42:46 CET 2022, INFO: Sending block C0FBE077776388090898000000000062C0
+Tue Feb 15 09:42:53 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:42:53 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:42:55 CET 2022, INFO: Charging current change from 22 to 32
+Tue Feb 15 09:42:56 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:42:56 CET 2022, INFO: Block received C0FDE063887777040000000000000000BDC0FC
+Tue Feb 15 09:42:56 CET 2022, INFO: Car plugged in, ready to charge
+Tue Feb 15 09:42:56 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 09:42:58 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:42:58 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:42:59 CET 2022, INFO: Block received C0FDE063887777090C800000000000004EC0FC
+Tue Feb 15 09:42:59 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:42:59 CET 2022, INFO: Charging current 32.0A set, 0.0A used
+Tue Feb 15 09:43:01 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 5s
+Tue Feb 15 09:43:01 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:43:07 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:43:07 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:43:10 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 09:43:10 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:43:10 CET 2022, INFO: Block received C0FDE063887777080C8000360000000083C0FC
+Tue Feb 15 09:43:10 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:10 CET 2022, INFO: Charging current 32.0A set, 0.54A used
+Tue Feb 15 09:43:12 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 09:43:12 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:43:12 CET 2022, INFO: Block received C0FDE063887777080C8000A900000000F6C0FC
+Tue Feb 15 09:43:12 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:12 CET 2022, INFO: Charging current 32.0A set, 1.69A used
+Tue Feb 15 09:43:15 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 18s
+Tue Feb 15 09:43:15 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:43:21 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:43:21 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:43:24 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 28s
+Tue Feb 15 09:43:24 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 09:43:24 CET 2022, INFO: Block received C0FDE063887777080C80094A00000000A0C0FC
+Tue Feb 15 09:43:24 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:24 CET 2022, INFO: Charging current 32.0A set, 23.78A used
+Tue Feb 15 09:43:26 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC
+Tue Feb 15 09:43:27 CET 2022, INFO: Block received C0FDE063887777080C80099B00000000F1C0FC
+Tue Feb 15 09:43:27 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:27 CET 2022, INFO: Charging current 32.0A set, 24.59A used
+Tue Feb 15 09:43:29 CET 2022, INFO: Charging current change from 32 to 27
+Tue Feb 15 09:43:29 CET 2022, INFO: Sending block C0FBE077776388090A8DBDC00000000058C0
+Tue Feb 15 09:43:35 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:43:35 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:43:38 CET 2022, INFO: Charging current is set at 27A, Sending no-change to TWC, waiting since 8s
+Tue Feb 15 09:43:38 CET 2022, INFO: Sending block C0FBE077776388090A8DBDC00000000058C0
+Tue Feb 15 09:43:38 CET 2022, INFO: SMA power meter reports 17691 Watt consumption from grid
+Tue Feb 15 09:43:46 CET 2022, INFO: Block received C0FDE063887777080C8009D20000000028C0FC
+Tue Feb 15 09:43:46 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:46 CET 2022, INFO: Charging current 32.0A set, 25.14A used
+Tue Feb 15 09:43:48 CET 2022, INFO: Charging current is set at 27A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 09:43:48 CET 2022, INFO: Sending block C0FBE077776388090A8DBDC00000000058C0
+Tue Feb 15 09:43:55 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:43:55 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:43:58 CET 2022, INFO: Charging current is set at 27A, Sending no-change to TWC, waiting since 28s
+Tue Feb 15 09:43:58 CET 2022, INFO: Sending block C0FBE077776388090A8DBDC00000000058C0
+Tue Feb 15 09:43:58 CET 2022, INFO: Block received C0FDE063887777080C8009CD0000000023C0FC
+Tue Feb 15 09:43:58 CET 2022, INFO: Car plugged in, starting to charge
+Tue Feb 15 09:43:58 CET 2022, INFO: Charging current 32.0A set, 25.09A used
+Tue Feb 15 09:44:00 CET 2022, INFO: Charging current change from 27 to 16
+Tue Feb 15 09:44:00 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:01 CET 2022, INFO: Block received C0FDE06388777709064009C900000000DAC0FC
+Tue Feb 15 09:44:01 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:44:01 CET 2022, INFO: Charging current 16.0A set, 25.05A used
+Tue Feb 15 09:44:03 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:44:03 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:09 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:44:09 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:44:12 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 11s
+Tue Feb 15 09:44:12 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:12 CET 2022, INFO: Block received C0FDE06388777709064006070000000015C0FC
+Tue Feb 15 09:44:12 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:44:12 CET 2022, INFO: Charging current 16.0A set, 15.43A used
+Tue Feb 15 09:44:14 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 09:44:14 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:14 CET 2022, INFO: Block received C0FDE0638877770106400609000000000FC0FC
+Tue Feb 15 09:44:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:44:14 CET 2022, INFO: Charging current 16.0A set, 15.45A used
+Tue Feb 15 09:44:17 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 09:44:17 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:23 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:44:23 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:44:26 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 25s
+Tue Feb 15 09:44:26 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:26 CET 2022, INFO: Block received C0FDE063887777010640060B0000000011C0FC
+Tue Feb 15 09:44:26 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:44:26 CET 2022, INFO: Charging current 16.0A set, 15.47A used
+Tue Feb 15 09:44:28 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 27s
+Tue Feb 15 09:44:28 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 09:44:28 CET 2022, INFO: Block received C0FDE063887777010640060D0000000013C0FC
+Tue Feb 15 09:44:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:44:28 CET 2022, INFO: Charging current 16.0A set, 15.49A used
+Tue Feb 15 09:44:30 CET 2022, INFO: Charging current change from 16 to 14
+Tue Feb 15 09:44:31 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 09:44:38 CET 2022, INFO: Block received C0FDE0638877770905780609000000004EC0FC
+Tue Feb 15 09:44:38 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:44:38 CET 2022, INFO: Charging current 14.0A set, 15.45A used
+Tue Feb 15 09:44:38 CET 2022, INFO: SMA power meter reports 9876 Watt consumption from grid
+Tue Feb 15 09:44:40 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:44:47 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:44:47 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:44:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:44:50 CET 2022, INFO: Block received C0FDE063887777090578053D0000000081C0FC
+Tue Feb 15 09:44:50 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:44:50 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:44:52 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:44:52 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:44:52 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:44:52 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:44:55 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:02 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:45:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:02 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:45:04 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:12 CET 2022, INFO: Block received C0FDE06388777701057805390000000075C0FC
+Tue Feb 15 09:45:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:12 CET 2022, INFO: Charging current 14.0A set, 13.37A used
+Tue Feb 15 09:45:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:21 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:45:21 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:45:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:24 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:45:24 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:24 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:45:26 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:27 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:45:27 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:27 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:45:29 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:36 CET 2022, INFO: Block received C0FDE063887777010578053A0000000076C0FC
+Tue Feb 15 09:45:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:36 CET 2022, INFO: Charging current 14.0A set, 13.38A used
+Tue Feb 15 09:45:38 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:38 CET 2022, INFO: SMA power meter reports 9823 Watt consumption from grid
+Tue Feb 15 09:45:45 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:45:45 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:45 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:45:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:55 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:45:55 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:45:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:45:58 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:45:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:45:58 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:46:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:46:00 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 09:46:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:46:00 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:46:03 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:46:09 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:46:09 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:46:12 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:46:12 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:46:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:46:12 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:46:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:46:15 CET 2022, INFO: Block received C0FDE063887777010578053A0000000076C0FC
+Tue Feb 15 09:46:15 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:46:15 CET 2022, INFO: Charging current 14.0A set, 13.38A used
+Tue Feb 15 09:46:17 CET 2022, INFO: Charging current change from 14 to 13
+Tue Feb 15 09:46:17 CET 2022, INFO: Sending block C0FBE0777763880905140000000000DBDDC0
+Tue Feb 15 09:46:24 CET 2022, INFO: Block received C0FDE06388777709051405420000000022C0FC
+Tue Feb 15 09:46:24 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:46:24 CET 2022, INFO: Charging current 13.0A set, 13.46A used
+Tue Feb 15 09:46:26 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:46:33 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:46:33 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:46:36 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:46:36 CET 2022, INFO: Block received C0FDE06388777709051404DA00000000B9C0FC
+Tue Feb 15 09:46:36 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:46:36 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:46:38 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:46:38 CET 2022, INFO: SMA power meter reports 9288 Watt consumption from grid
+Tue Feb 15 09:46:38 CET 2022, INFO: Block received C0FDE06388777701051404DBDD00000000B2C0FC
+Tue Feb 15 09:46:39 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:46:39 CET 2022, INFO: Charging current 13.0A set, 12.43A used
+Tue Feb 15 09:46:41 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:46:48 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:46:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:46:48 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:46:50 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:46:57 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:46:57 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:47:00 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:00 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:47:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:00 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:47:02 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:03 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:47:03 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:03 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:47:05 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:11 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:47:11 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:47:14 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:14 CET 2022, INFO: Block received C0FDE06388777701051404DE00000000B5C0FC
+Tue Feb 15 09:47:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:14 CET 2022, INFO: Charging current 13.0A set, 12.46A used
+Tue Feb 15 09:47:16 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:16 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:47:16 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:16 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:47:19 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:25 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:47:25 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:47:28 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:28 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:47:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:28 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:47:30 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:31 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:47:31 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:31 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:47:33 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:38 CET 2022, INFO: SMA power meter reports 9238 Watt consumption from grid
+Tue Feb 15 09:47:39 CET 2022, INFO: Block received C0FDE06388777701051404D100000000A8C0FC
+Tue Feb 15 09:47:39 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:39 CET 2022, INFO: Charging current 13.0A set, 12.33A used
+Tue Feb 15 09:47:42 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:47:50 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:47:50 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:47:50 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:47:52 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:00 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:48:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:00 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:48:02 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:10 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:48:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:10 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:48:12 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:19 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:48:19 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:19 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:48:22 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:30 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:48:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:30 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:48:32 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:38 CET 2022, INFO: SMA power meter reports 9124 Watt consumption from grid
+Tue Feb 15 09:48:39 CET 2022, INFO: Block received C0FDE06388777701051404D100000000A8C0FC
+Tue Feb 15 09:48:39 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:39 CET 2022, INFO: Charging current 13.0A set, 12.33A used
+Tue Feb 15 09:48:42 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:48:49 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:48:49 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:48:49 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:48:52 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:00 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:49:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:00 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:49:02 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:09 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:49:09 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:49:12 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:12 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:49:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:12 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:49:14 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:14 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:49:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:14 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:49:17 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:24 CET 2022, INFO: Block received C0FDE06388777701051404D600000000ADC0FC
+Tue Feb 15 09:49:24 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:24 CET 2022, INFO: Charging current 13.0A set, 12.38A used
+Tue Feb 15 09:49:26 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:34 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:49:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:34 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:49:36 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:38 CET 2022, INFO: SMA power meter reports 9184 Watt consumption from grid
+Tue Feb 15 09:49:43 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:49:43 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:49:46 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:46 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:49:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:46 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:49:48 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:49 CET 2022, INFO: Block received C0FDE06388777701051404DE00000000B5C0FC
+Tue Feb 15 09:49:49 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:49 CET 2022, INFO: Charging current 13.0A set, 12.46A used
+Tue Feb 15 09:49:51 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:49:58 CET 2022, INFO: Block received C0FDE06388777701051404D200000000A9C0FC
+Tue Feb 15 09:49:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:49:58 CET 2022, INFO: Charging current 13.0A set, 12.34A used
+Tue Feb 15 09:50:00 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:50:07 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:50:07 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:50:10 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 09:50:10 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 09:50:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:50:10 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 09:50:12 CET 2022, INFO: Charging current change from 13 to 12
+Tue Feb 15 09:50:12 CET 2022, INFO: Sending block C0FBE0777763880904B0000000000076C0
+Tue Feb 15 09:50:12 CET 2022, INFO: Block received C0FDE0638877770904B004DBDD0000000055C0FC
+Tue Feb 15 09:50:12 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:50:12 CET 2022, INFO: Charging current 12.0A set, 12.43A used
+Tue Feb 15 09:50:15 CET 2022, INFO: Charging current is set at 12A, Sending no-change to TWC
+Tue Feb 15 09:50:22 CET 2022, INFO: Block received C0FDE0638877770904B0047800000000F2C0FC
+Tue Feb 15 09:50:22 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:50:22 CET 2022, INFO: Charging current 12.0A set, 11.44A used
+Tue Feb 15 09:50:24 CET 2022, INFO: Charging current is set at 12A, Sending no-change to TWC
+Tue Feb 15 09:50:31 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:50:31 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:50:34 CET 2022, INFO: Charging current is set at 12A, Sending no-change to TWC
+Tue Feb 15 09:50:34 CET 2022, INFO: Block received C0FDE0638877770104B0047400000000E6C0FC
+Tue Feb 15 09:50:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:50:34 CET 2022, INFO: Charging current 12.0A set, 11.4A used
+Tue Feb 15 09:50:36 CET 2022, INFO: Charging current is set at 12A, Sending no-change to TWC
+Tue Feb 15 09:50:36 CET 2022, INFO: Block received C0FDE0638877770104B0046F00000000E1C0FC
+Tue Feb 15 09:50:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:50:36 CET 2022, INFO: Charging current 12.0A set, 11.35A used
+Tue Feb 15 09:50:38 CET 2022, INFO: SMA power meter reports 9799 Watt consumption from grid
+Tue Feb 15 09:50:39 CET 2022, INFO: Charging current is set at 12A, Sending no-change to TWC
+Tue Feb 15 09:50:45 CET 2022, INFO: Block received C0FDE0638877770104B0047800000000EAC0FC
+Tue Feb 15 09:50:45 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:50:46 CET 2022, INFO: Charging current 12.0A set, 11.44A used
+Tue Feb 15 09:50:48 CET 2022, INFO: Charging current change from 12 to 14
+Tue Feb 15 09:50:48 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 09:50:56 CET 2022, INFO: Block received C0FDE063887777090578047400000000B7C0FC
+Tue Feb 15 09:50:56 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:50:56 CET 2022, INFO: Charging current 14.0A set, 11.4A used
+Tue Feb 15 09:50:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:05 CET 2022, INFO: Block received C0FDE0638877770905780549000000008DC0FC
+Tue Feb 15 09:51:05 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:51:05 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 09:51:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:16 CET 2022, INFO: Block received C0FDE06388777701057805390000000075C0FC
+Tue Feb 15 09:51:16 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:51:16 CET 2022, INFO: Charging current 14.0A set, 13.37A used
+Tue Feb 15 09:51:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:25 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:51:25 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:51:27 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 09:51:28 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 09:51:28 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 09:51:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:51:28 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:51:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:30 CET 2022, INFO: Block received C0FDE06388777709057805420000000086C0FC
+Tue Feb 15 09:51:30 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:51:30 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:51:33 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:38 CET 2022, INFO: SMA power meter reports 9991 Watt consumption from grid
+Tue Feb 15 09:51:39 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:51:39 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:51:42 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:42 CET 2022, INFO: Block received C0FDE06388777709057805430000000087C0FC
+Tue Feb 15 09:51:42 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:51:42 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 09:51:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:44 CET 2022, INFO: Block received C0FDE063887777010578053A0000000076C0FC
+Tue Feb 15 09:51:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:51:44 CET 2022, INFO: Charging current 14.0A set, 13.38A used
+Tue Feb 15 09:51:47 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:51:54 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:51:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:51:54 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:51:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:04 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:52:04 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:52:04 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:52:06 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 09:52:06 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 09:52:13 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:52:13 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:52:16 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:16 CET 2022, INFO: Block received C0FDE063887777090578053D0000000081C0FC
+Tue Feb 15 09:52:16 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:52:16 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:52:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:18 CET 2022, INFO: Block received C0FDE063887777090578053D0000000081C0FC
+Tue Feb 15 09:52:18 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:52:19 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:52:21 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:28 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:52:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:52:28 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:52:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:37 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:52:37 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:52:37 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:52:38 CET 2022, INFO: SMA power meter reports 9963 Watt consumption from grid
+Tue Feb 15 09:52:40 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:48 CET 2022, INFO: Block received C0FDE063887777010578053A0000000076C0FC
+Tue Feb 15 09:52:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:52:48 CET 2022, INFO: Charging current 14.0A set, 13.38A used
+Tue Feb 15 09:52:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:52:57 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:52:57 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:52:57 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:53:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:07 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:53:07 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:07 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:53:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:17 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:53:17 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:53:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:20 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:53:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:20 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:53:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:22 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 09:53:22 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:22 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 09:53:25 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:31 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:53:31 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:31 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:53:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:38 CET 2022, INFO: SMA power meter reports 9879 Watt consumption from grid
+Tue Feb 15 09:53:42 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 09:53:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:42 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 09:53:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:51 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:53:51 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:53:54 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:54 CET 2022, INFO: Block received C0FDE063887777010578053A0000000076C0FC
+Tue Feb 15 09:53:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:54 CET 2022, INFO: Charging current 14.0A set, 13.38A used
+Tue Feb 15 09:53:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:53:56 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:53:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:53:56 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:53:59 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:06 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:54:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:06 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:54:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:15 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:54:15 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:54:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:18 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:54:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:18 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:54:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:20 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 09:54:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:20 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 09:54:23 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:30 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:54:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:30 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:54:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:38 CET 2022, INFO: SMA power meter reports 9850 Watt consumption from grid
+Tue Feb 15 09:54:40 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 09:54:40 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:40 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 09:54:42 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:54:49 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 09:54:49 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:54:49 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:54:52 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:00 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:55:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:55:00 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:55:02 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:10 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:55:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:55:10 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:55:12 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:20 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:55:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:55:20 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:55:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:55:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:55:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:32 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:55:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:55:32 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:55:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:55:34 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:55:35 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:55:35 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:55:37 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 09:55:37 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 09:55:38 CET 2022, INFO: SMA power meter reports 10040 Watt consumption from grid
+Tue Feb 15 09:55:53 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:55:53 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:55:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:03 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:56:03 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:56:06 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:06 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:56:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:06 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:56:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:08 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 09:56:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:08 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 09:56:11 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:17 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:56:17 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:56:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:20 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:56:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:20 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:56:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:22 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 09:56:22 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:22 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 09:56:25 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:31 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:56:31 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:56:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:34 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:56:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:34 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:56:36 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:36 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 09:56:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:36 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 09:56:38 CET 2022, INFO: SMA power meter reports 9719 Watt consumption from grid
+Tue Feb 15 09:56:39 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:46 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:56:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:46 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:56:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:56:56 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:56:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:56:56 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:56:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:57:05 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:57:05 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:57:05 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:57:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:57:15 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:57:15 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:57:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:57:18 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 09:57:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:57:18 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 09:57:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 09:57:20 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 09:57:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:57:20 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 09:57:22 CET 2022, INFO: Charging current change from 14 to 11
+Tue Feb 15 09:57:23 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:57:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:57:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:57:32 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 09:57:32 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:57:38 CET 2022, INFO: SMA power meter reports 11886 Watt consumption from grid
+Tue Feb 15 09:57:39 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 09:57:39 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:57:39 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 09:57:42 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 09:57:42 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:57:49 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:57:49 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:57:52 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 28s
+Tue Feb 15 09:57:52 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:57:52 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 09:57:52 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:57:52 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 09:57:54 CET 2022, INFO: Charging current change from 11 to 8
+Tue Feb 15 09:57:54 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:57:54 CET 2022, INFO: Block received C0FDE0638877770903200542000000002CC0FC
+Tue Feb 15 09:57:54 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:57:54 CET 2022, INFO: Charging current 8.0A set, 13.46A used
+Tue Feb 15 09:57:57 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:57:57 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:58:04 CET 2022, INFO: Block received C0FDE06388777709032002DF00000000C6C0FC
+Tue Feb 15 09:58:04 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:58:04 CET 2022, INFO: Charging current 8.0A set, 7.35A used
+Tue Feb 15 09:58:06 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 11s
+Tue Feb 15 09:58:06 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:58:13 CET 2022, INFO: Block received C0FDE06388777701032002DF00000000BEC0FC
+Tue Feb 15 09:58:13 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:13 CET 2022, INFO: Charging current 8.0A set, 7.35A used
+Tue Feb 15 09:58:16 CET 2022, INFO: Charging current is set at 8A, Sending no-change to TWC, waiting since 21s
+Tue Feb 15 09:58:16 CET 2022, INFO: Sending block C0FBE0777763880903200000000000E5C0
+Tue Feb 15 09:58:23 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:58:23 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:58:25 CET 2022, INFO: Charging current change from 8 to 11
+Tue Feb 15 09:58:26 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:26 CET 2022, INFO: Block received C0FDE06388777701032002E400000000C3C0FC
+Tue Feb 15 09:58:26 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:26 CET 2022, INFO: Charging current 8.0A set, 7.4A used
+Tue Feb 15 09:58:28 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:58:28 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:33 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:58:33 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:58:36 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 10s
+Tue Feb 15 09:58:36 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:36 CET 2022, INFO: Block received C0FDE06388777701032002DF00000000BEC0FC
+Tue Feb 15 09:58:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:36 CET 2022, INFO: Charging current 8.0A set, 7.35A used
+Tue Feb 15 09:58:38 CET 2022, INFO: SMA power meter reports 7604 Watt consumption from grid
+Tue Feb 15 09:58:38 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 12s
+Tue Feb 15 09:58:38 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:38 CET 2022, INFO: Block received C0FDE06388777701032002DF00000000BEC0FC
+Tue Feb 15 09:58:38 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:38 CET 2022, INFO: Charging current 8.0A set, 7.35A used
+Tue Feb 15 09:58:41 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 15s
+Tue Feb 15 09:58:41 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:48 CET 2022, INFO: Block received C0FDE06388777701032002E400000000C3C0FC
+Tue Feb 15 09:58:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:48 CET 2022, INFO: Charging current 8.0A set, 7.4A used
+Tue Feb 15 09:58:50 CET 2022, INFO: Charging current is set at 11A, Sending no-change to TWC, waiting since 24s
+Tue Feb 15 09:58:50 CET 2022, INFO: Sending block C0FBE07777638809044DBDC00000000012C0
+Tue Feb 15 09:58:58 CET 2022, INFO: Block received C0FDE06388777701032002E400000000C3C0FC
+Tue Feb 15 09:58:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:58:58 CET 2022, INFO: Charging current 8.0A set, 7.4A used
+Tue Feb 15 09:59:00 CET 2022, INFO: Charging current change from 11 to 15
+Tue Feb 15 09:59:00 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 09:59:07 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:59:07 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:59:10 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 09:59:10 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 09:59:17 CET 2022, INFO: Block received C0FDE06388777701032002E400000000C3C0FC
+Tue Feb 15 09:59:17 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:59:17 CET 2022, INFO: Charging current 8.0A set, 7.4A used
+Tue Feb 15 09:59:20 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 09:59:20 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 09:59:28 CET 2022, INFO: Block received C0FDE06388777701032002E400000000C3C0FC
+Tue Feb 15 09:59:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:59:28 CET 2022, INFO: Charging current 8.0A set, 7.4A used
+Tue Feb 15 09:59:30 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 09:59:30 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 09:59:37 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:59:37 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:59:38 CET 2022, INFO: SMA power meter reports 5527 Watt consumption from grid
+Tue Feb 15 09:59:39 CET 2022, INFO: Charging current change from 15 to 21
+Tue Feb 15 09:59:40 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 09:59:40 CET 2022, INFO: Block received C0FDE06388777701032002E800000000C7C0FC
+Tue Feb 15 09:59:40 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:59:40 CET 2022, INFO: Charging current 8.0A set, 7.44A used
+Tue Feb 15 09:59:42 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 09:59:42 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 09:59:42 CET 2022, INFO: Block received C0FDE06388777709083402E400000000E4C0FC
+Tue Feb 15 09:59:42 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:59:42 CET 2022, INFO: Charging current 21.0A set, 7.4A used
+Tue Feb 15 09:59:45 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 5s
+Tue Feb 15 09:59:45 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 09:59:51 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 09:59:51 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 09:59:54 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 09:59:54 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 09:59:54 CET 2022, INFO: Block received C0FDE0638877770908340636000000003AC0FC
+Tue Feb 15 09:59:54 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 09:59:54 CET 2022, INFO: Charging current 21.0A set, 15.9A used
+Tue Feb 15 09:59:56 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 09:59:56 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 09:59:56 CET 2022, INFO: Block received C0FDE06388777701083408240000000022C0FC
+Tue Feb 15 09:59:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 09:59:56 CET 2022, INFO: Charging current 21.0A set, 20.84A used
+Tue Feb 15 09:59:59 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 18s
+Tue Feb 15 09:59:59 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:00:05 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:00:05 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:00:08 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 28s
+Tue Feb 15 10:00:08 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:00:08 CET 2022, INFO: Block received C0FDE063887777010834081F000000001DC0FC
+Tue Feb 15 10:00:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:08 CET 2022, INFO: Charging current 21.0A set, 20.79A used
+Tue Feb 15 10:00:10 CET 2022, INFO: Charging current change from 21 to 14
+Tue Feb 15 10:00:10 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:11 CET 2022, INFO: Block received C0FDE0638877770905780824000000006BC0FC
+Tue Feb 15 10:00:11 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:00:11 CET 2022, INFO: Charging current 14.0A set, 20.84A used
+Tue Feb 15 10:00:13 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:00:13 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:19 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:00:19 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:00:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 11s
+Tue Feb 15 10:00:22 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:22 CET 2022, INFO: Block received C0FDE063887777090578053D0000000081C0FC
+Tue Feb 15 10:00:22 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:00:22 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 10:00:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 10:00:24 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:24 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:00:24 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:24 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:00:27 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 10:00:27 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:33 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:00:33 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:33 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:00:36 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 25s
+Tue Feb 15 10:00:36 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:00:38 CET 2022, INFO: SMA power meter reports 10961 Watt consumption from grid
+Tue Feb 15 10:00:43 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:00:43 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:00:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:00:46 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:00:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:46 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:00:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:00:48 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 10:00:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:48 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 10:00:51 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:00:58 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:00:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:00:58 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:01:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:07 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:01:07 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:01:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:10 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:01:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:01:10 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:01:12 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:12 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:01:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:01:12 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:01:15 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:22 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:01:22 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:01:22 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:01:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:38 CET 2022, INFO: SMA power meter reports 9710 Watt consumption from grid
+Tue Feb 15 10:01:42 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:01:42 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:01:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:51 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:01:51 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:01:54 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:54 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:01:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:01:54 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:01:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:01:56 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 10:01:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:01:56 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 10:01:59 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:06 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:02:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:06 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:02:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:16 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:02:16 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:16 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:02:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:26 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:02:26 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:26 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:02:28 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:36 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:02:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:36 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:02:38 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:38 CET 2022, INFO: SMA power meter reports 9663 Watt consumption from grid
+Tue Feb 15 10:02:45 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:02:45 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:46 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:02:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:55 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:02:55 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:02:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:02:58 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:02:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:02:58 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:03:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:00 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:03:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:00 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:03:03 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:09 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:03:09 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:03:12 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:12 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:03:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:12 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:03:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:14 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 10:03:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:14 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 10:03:17 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:24 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:03:24 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:24 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:03:26 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:34 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:03:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:34 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:03:36 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:38 CET 2022, INFO: SMA power meter reports 9686 Watt consumption from grid
+Tue Feb 15 10:03:43 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:03:43 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:43 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:03:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:03:53 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:03:53 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:03:53 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:03:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:03 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:04:03 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:04:06 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:06 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 10:04:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:06 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 10:04:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:08 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:04:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:08 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:04:11 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:18 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:04:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:18 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:04:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:27 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:04:27 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:04:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:30 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 10:04:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:30 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 10:04:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:32 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:04:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:32 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:04:35 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:38 CET 2022, INFO: SMA power meter reports 9826 Watt consumption from grid
+Tue Feb 15 10:04:42 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:04:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:42 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:04:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:04:51 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:04:51 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:04:51 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:04:54 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:02 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:05:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:02 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:05:04 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:12 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:05:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:12 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:05:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:22 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:05:22 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:22 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:05:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:32 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:05:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:32 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:05:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:38 CET 2022, INFO: SMA power meter reports 9677 Watt consumption from grid
+Tue Feb 15 10:05:41 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:05:41 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:05:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:44 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:05:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:44 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:05:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:46 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:05:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:46 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:05:49 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:05:55 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:05:55 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:05:56 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:05:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:05 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:06:05 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:06:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:08 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:06:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:08 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:06:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:10 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:06:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:10 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:06:13 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:20 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:06:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:20 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:06:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:06:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:06:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:32 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:06:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:32 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:06:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:34 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:06:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:34 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:06:37 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:38 CET 2022, INFO: SMA power meter reports 9785 Watt consumption from grid
+Tue Feb 15 10:06:43 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:06:43 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:43 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:06:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:06:54 CET 2022, INFO: Block received C0FDE063887777010578054F000000008BC0FC
+Tue Feb 15 10:06:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:06:54 CET 2022, INFO: Charging current 14.0A set, 13.59A used
+Tue Feb 15 10:06:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:03 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:07:03 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:07:06 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:06 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:07:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:06 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:07:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:08 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:07:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:08 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:07:11 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:18 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:07:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:18 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:07:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:27 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:07:27 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:07:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:30 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:07:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:30 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:07:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:32 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:07:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:32 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:07:35 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:38 CET 2022, INFO: SMA power meter reports 9686 Watt consumption from grid
+Tue Feb 15 10:07:41 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:07:41 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:07:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:44 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:07:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:44 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:07:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:46 CET 2022, INFO: Block received C0FDE063887777010578054F000000008BC0FC
+Tue Feb 15 10:07:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:46 CET 2022, INFO: Charging current 14.0A set, 13.59A used
+Tue Feb 15 10:07:49 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:55 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:07:55 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:07:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:07:58 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:07:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:07:58 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:08:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:00 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:08:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:00 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:08:03 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:10 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:08:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:10 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:08:12 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:20 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:08:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:20 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:08:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:08:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:08:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:32 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:08:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:32 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:08:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:34 CET 2022, INFO: Block received C0FDE063887777010578053F000000007BC0FC
+Tue Feb 15 10:08:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:34 CET 2022, INFO: Charging current 14.0A set, 13.43A used
+Tue Feb 15 10:08:37 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:38 CET 2022, INFO: SMA power meter reports 9580 Watt consumption from grid
+Tue Feb 15 10:08:44 CET 2022, INFO: Block received C0FDE063887777010578054F000000008BC0FC
+Tue Feb 15 10:08:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:44 CET 2022, INFO: Charging current 14.0A set, 13.59A used
+Tue Feb 15 10:08:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:53 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:08:53 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:08:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:56 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:08:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:56 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:08:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:08:58 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:08:58 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:08:58 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:09:01 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:07 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:09:07 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:07 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:09:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:18 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:09:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:18 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:09:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:27 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:09:27 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:09:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:30 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:09:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:30 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:09:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:32 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:09:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:32 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:09:35 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:38 CET 2022, INFO: SMA power meter reports 9548 Watt consumption from grid
+Tue Feb 15 10:09:42 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:09:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:42 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:09:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:51 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:09:51 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:09:54 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:54 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:09:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:54 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:09:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:09:56 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:09:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:09:56 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:09:59 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:05 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:10:05 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:10:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:08 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:10:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:08 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:10:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:10 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:10:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:10 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:10:13 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:19 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:10:19 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:19 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:10:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:10:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:10:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:32 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:10:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:32 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:10:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:34 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:10:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:34 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:10:37 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:38 CET 2022, INFO: SMA power meter reports 9516 Watt consumption from grid
+Tue Feb 15 10:10:43 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:10:43 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:10:46 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:46 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:10:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:46 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:10:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:48 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:10:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:48 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:10:51 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:10:57 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:10:57 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:10:57 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:11:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:08 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:11:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:11:08 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:11:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:17 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:11:17 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:11:17 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:11:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:27 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:11:27 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:11:27 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:11:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:37 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:11:37 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:11:38 CET 2022, INFO: SMA power meter reports 9365 Watt consumption from grid
+Tue Feb 15 10:11:40 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:47 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:11:47 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:11:47 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:11:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:11:57 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:11:57 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:12:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:00 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:12:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:00 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:12:02 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:02 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:12:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:02 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:12:05 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:12 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:12:12 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:12 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:12:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:21 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:12:21 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:12:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:24 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:12:24 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:24 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:12:26 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:26 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:12:26 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:26 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:12:29 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:36 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:12:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:36 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:12:38 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:38 CET 2022, INFO: SMA power meter reports 9323 Watt consumption from grid
+Tue Feb 15 10:12:45 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:12:45 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:45 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:12:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:12:55 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:12:55 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:12:55 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:12:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:06 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:13:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:06 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:13:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:15 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:13:15 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:13:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:18 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:13:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:18 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:13:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:20 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:13:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:20 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:13:23 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:29 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:13:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:30 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:13:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:38 CET 2022, INFO: SMA power meter reports 9286 Watt consumption from grid
+Tue Feb 15 10:13:39 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:13:39 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:13:42 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:42 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:13:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:42 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:13:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:44 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:13:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:44 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:13:47 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:13:54 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:13:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:13:54 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:13:56 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:03 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:14:03 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:14:06 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:06 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:14:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:06 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:14:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:08 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:14:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:08 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:14:11 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:18 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:14:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:18 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:14:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:27 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:14:27 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:27 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:14:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:37 CET 2022, INFO: Block received C0FDE0638877770105780542000000007EC0FC
+Tue Feb 15 10:14:37 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:37 CET 2022, INFO: Charging current 14.0A set, 13.46A used
+Tue Feb 15 10:14:38 CET 2022, INFO: SMA power meter reports 9230 Watt consumption from grid
+Tue Feb 15 10:14:40 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:47 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:14:47 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:14:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:50 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:14:50 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:50 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:14:52 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:14:52 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:14:52 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:14:52 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:14:55 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:01 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:15:01 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:01 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:15:04 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:11 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:15:11 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:11 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:15:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:21 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:15:21 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:21 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:15:24 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:31 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:15:31 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:15:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:34 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:15:34 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:34 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:15:36 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:36 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:15:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:36 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:15:38 CET 2022, INFO: SMA power meter reports 9249 Watt consumption from grid
+Tue Feb 15 10:15:39 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:45 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:15:45 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:46 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:15:48 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:15:56 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:15:56 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:15:56 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:15:58 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:05 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:16:05 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:05 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:16:08 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:15 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:16:15 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:16:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:18 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:16:18 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:18 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:16:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:20 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:16:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:20 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:16:23 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:30 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:16:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:30 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:16:32 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:38 CET 2022, INFO: SMA power meter reports 9253 Watt consumption from grid
+Tue Feb 15 10:16:39 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:16:39 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:39 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:16:42 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:49 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:16:49 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:16:49 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:16:52 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:16:59 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:16:59 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:17:02 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:02 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:17:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:02 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:17:04 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:04 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:17:04 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:04 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:17:07 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:14 CET 2022, INFO: Block received C0FDE0638877770105780543000000007FC0FC
+Tue Feb 15 10:17:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:14 CET 2022, INFO: Charging current 14.0A set, 13.47A used
+Tue Feb 15 10:17:16 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:23 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:17:23 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:23 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:17:26 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:33 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:17:33 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:17:36 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:36 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:17:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:36 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:17:38 CET 2022, INFO: SMA power meter reports 9255 Watt consumption from grid
+Tue Feb 15 10:17:38 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:38 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:17:38 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:38 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:17:41 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:47 CET 2022, INFO: Block received C0FDE06388777701057805460000000082C0FC
+Tue Feb 15 10:17:47 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:17:47 CET 2022, INFO: Charging current 14.0A set, 13.5A used
+Tue Feb 15 10:17:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:17:57 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:17:57 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:18:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:00 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:18:00 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:00 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:18:02 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:02 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:18:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:02 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:18:05 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:11 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:18:11 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:18:14 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:14 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:18:14 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:14 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:18:16 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:16 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:18:16 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:16 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:18:19 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:25 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:18:25 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:25 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:18:28 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:36 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:18:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:36 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:18:38 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:18:38 CET 2022, INFO: SMA power meter reports 9176 Watt consumption from grid
+Tue Feb 15 10:18:46 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:18:46 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:18:46 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:18:48 CET 2022, INFO: Charging current change from 14 to 13
+Tue Feb 15 10:18:48 CET 2022, INFO: Sending block C0FBE0777763880905140000000000DBDDC0
+Tue Feb 15 10:18:55 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:18:55 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:18:58 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC
+Tue Feb 15 10:18:58 CET 2022, INFO: Block received C0FDE06388777709051405460000000026C0FC
+Tue Feb 15 10:18:58 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:18:58 CET 2022, INFO: Charging current 13.0A set, 13.5A used
+Tue Feb 15 10:19:00 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC, waiting since 12s
+Tue Feb 15 10:19:00 CET 2022, INFO: Sending block C0FBE0777763880905140000000000DBDDC0
+Tue Feb 15 10:19:00 CET 2022, INFO: Block received C0FDE06388777709051404DE00000000BDC0FC
+Tue Feb 15 10:19:00 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:19:00 CET 2022, INFO: Charging current 13.0A set, 12.46A used
+Tue Feb 15 10:19:03 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC, waiting since 14s
+Tue Feb 15 10:19:03 CET 2022, INFO: Sending block C0FBE0777763880905140000000000DBDDC0
+Tue Feb 15 10:19:10 CET 2022, INFO: Block received C0FDE06388777701051404DE00000000B5C0FC
+Tue Feb 15 10:19:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:10 CET 2022, INFO: Charging current 13.0A set, 12.46A used
+Tue Feb 15 10:19:12 CET 2022, INFO: Charging current is set at 13A, Sending no-change to TWC, waiting since 23s
+Tue Feb 15 10:19:12 CET 2022, INFO: Sending block C0FBE0777763880905140000000000DBDDC0
+Tue Feb 15 10:19:19 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:19:19 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:19:21 CET 2022, INFO: Charging current change from 13 to 15
+Tue Feb 15 10:19:22 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:19:22 CET 2022, INFO: Block received C0FDE06388777701051404DBDD00000000B2C0FC
+Tue Feb 15 10:19:22 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:22 CET 2022, INFO: Charging current 13.0A set, 12.43A used
+Tue Feb 15 10:19:24 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:19:29 CET 2022, INFO: Block received C0FDE06388777701051404DBDD00000000B2C0FC
+Tue Feb 15 10:19:29 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:29 CET 2022, INFO: Charging current 13.0A set, 12.43A used
+Tue Feb 15 10:19:32 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:19:38 CET 2022, INFO: SMA power meter reports 9584 Watt consumption from grid
+Tue Feb 15 10:19:39 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:19:39 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:19:42 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:19:42 CET 2022, INFO: Block received C0FDE06388777701051404DBDD00000000B2C0FC
+Tue Feb 15 10:19:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:42 CET 2022, INFO: Charging current 13.0A set, 12.43A used
+Tue Feb 15 10:19:44 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:19:44 CET 2022, INFO: Block received C0FDE06388777701051404DA00000000B1C0FC
+Tue Feb 15 10:19:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:44 CET 2022, INFO: Charging current 13.0A set, 12.42A used
+Tue Feb 15 10:19:47 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 25s
+Tue Feb 15 10:19:47 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:19:53 CET 2022, INFO: Block received C0FDE06388777701051404DBDD00000000B2C0FC
+Tue Feb 15 10:19:53 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:19:53 CET 2022, INFO: Charging current 13.0A set, 12.43A used
+Tue Feb 15 10:19:56 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:20:04 CET 2022, INFO: Block received C0FDE06388777701051404DE00000000B5C0FC
+Tue Feb 15 10:20:04 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:20:04 CET 2022, INFO: Charging current 13.0A set, 12.46A used
+Tue Feb 15 10:20:06 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:20:13 CET 2022, INFO: Block received C0FDE06388777701051404E400000000BBC0FC
+Tue Feb 15 10:20:13 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:20:13 CET 2022, INFO: Charging current 13.0A set, 12.52A used
+Tue Feb 15 10:20:16 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:20:23 CET 2022, INFO: Block received C0FDE06388777701051404E400000000BBC0FC
+Tue Feb 15 10:20:23 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:20:23 CET 2022, INFO: Charging current 13.0A set, 12.52A used
+Tue Feb 15 10:20:26 CET 2022, INFO: Charging current change from 15 to 17
+Tue Feb 15 10:20:26 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:20:34 CET 2022, INFO: Block received C0FDE0638877770906A404DA000000004AC0FC
+Tue Feb 15 10:20:34 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:20:34 CET 2022, INFO: Charging current 17.0A set, 12.42A used
+Tue Feb 15 10:20:36 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 10s
+Tue Feb 15 10:20:36 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:20:38 CET 2022, INFO: SMA power meter reports 12450 Watt consumption from grid
+Tue Feb 15 10:20:44 CET 2022, INFO: Block received C0FDE0638877770906A405A80000000019C0FC
+Tue Feb 15 10:20:44 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:20:44 CET 2022, INFO: Charging current 17.0A set, 14.48A used
+Tue Feb 15 10:20:46 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 20s
+Tue Feb 15 10:20:46 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:20:54 CET 2022, INFO: Block received C0FDE0638877770106A405A4000000000DC0FC
+Tue Feb 15 10:20:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:20:54 CET 2022, INFO: Charging current 17.0A set, 14.44A used
+Tue Feb 15 10:20:56 CET 2022, INFO: Charging current change from 17 to 16
+Tue Feb 15 10:20:56 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 10:21:04 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:04 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:04 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:04 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:05 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:05 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:05 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:05 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:06 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:06 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:06 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:06 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:07 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:07 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:07 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:08 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:08 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:08 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:08 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:09 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:09 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:09 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:09 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:10 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:10 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:10 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:10 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:11 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:11 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:11 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:11 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:12 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:12 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:12 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:13 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:13 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:13 CET 2022, WARNING: Block checksum failed C0000000099C0FC
+Tue Feb 15 10:21:13 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:21:13 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:21:16 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 10:21:16 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 10:21:23 CET 2022, INFO: Block received C0FDE06388777701064005840000000089C0FC
+Tue Feb 15 10:21:23 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:21:23 CET 2022, INFO: Charging current 16.0A set, 14.12A used
+Tue Feb 15 10:21:26 CET 2022, INFO: Charging current is set at 16A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 10:21:26 CET 2022, INFO: Sending block C0FBE077776388090640000000000008C0
+Tue Feb 15 10:21:33 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:21:33 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:21:35 CET 2022, INFO: Charging current change from 16 to 15
+Tue Feb 15 10:21:36 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:21:36 CET 2022, INFO: Block received C0FDE0638877770106400576000000007BC0FC
+Tue Feb 15 10:21:36 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:21:36 CET 2022, INFO: Charging current 16.0A set, 13.98A used
+Tue Feb 15 10:21:38 CET 2022, INFO: SMA power meter reports 10600 Watt consumption from grid
+Tue Feb 15 10:21:38 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:21:38 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:21:44 CET 2022, INFO: Block received C0FDE06388777701064005720000000077C0FC
+Tue Feb 15 10:21:44 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:21:44 CET 2022, INFO: Charging current 16.0A set, 13.94A used
+Tue Feb 15 10:21:46 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:21:54 CET 2022, INFO: Block received C0FDE063887777010640056A000000006FC0FC
+Tue Feb 15 10:21:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:21:54 CET 2022, INFO: Charging current 16.0A set, 13.86A used
+Tue Feb 15 10:21:56 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 20s
+Tue Feb 15 10:21:56 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:22:03 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:22:03 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:22:06 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 10:22:06 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:22:06 CET 2022, INFO: Block received C0FDE06388777701064005730000000078C0FC
+Tue Feb 15 10:22:06 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:22:06 CET 2022, INFO: Charging current 16.0A set, 13.95A used
+Tue Feb 15 10:22:08 CET 2022, INFO: Charging current change from 15 to 14
+Tue Feb 15 10:22:08 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:08 CET 2022, INFO: Block received C0FDE063887777090578057800000000BCC0FC
+Tue Feb 15 10:22:08 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:22:08 CET 2022, INFO: Charging current 14.0A set, 14.0A used
+Tue Feb 15 10:22:11 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:22:11 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:17 CET 2022, INFO: Block received C0FDE063887777090578054D0000000091C0FC
+Tue Feb 15 10:22:17 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:22:17 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:22:20 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 11s
+Tue Feb 15 10:22:20 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:28 CET 2022, INFO: Block received C0FDE063887777010578054D0000000089C0FC
+Tue Feb 15 10:22:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:22:28 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:22:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 21s
+Tue Feb 15 10:22:30 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:38 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:22:38 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:22:38 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:22:38 CET 2022, INFO: SMA power meter reports 10258 Watt consumption from grid
+Tue Feb 15 10:22:40 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 10:22:40 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:47 CET 2022, INFO: Block received C0FDE063887777090578054A000000008EC0FC
+Tue Feb 15 10:22:47 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:22:47 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:22:50 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 10:22:50 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:22:57 CET 2022, INFO: Block received C0FDE0638877770905780549000000008DC0FC
+Tue Feb 15 10:22:57 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:22:57 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:23:00 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 19s
+Tue Feb 15 10:23:00 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:08 CET 2022, INFO: Block received C0FDE063887777010578054F000000008BC0FC
+Tue Feb 15 10:23:08 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:23:08 CET 2022, INFO: Charging current 14.0A set, 13.59A used
+Tue Feb 15 10:23:10 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:23:17 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:23:17 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:23:19 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 10:23:20 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:20 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:23:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:23:20 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:23:22 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:23:22 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:22 CET 2022, INFO: Block received C0FDE0638877770905780549000000008DC0FC
+Tue Feb 15 10:23:22 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:23:22 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:23:25 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 5s
+Tue Feb 15 10:23:25 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:32 CET 2022, INFO: Block received C0FDE063887777090578054A000000008EC0FC
+Tue Feb 15 10:23:32 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:23:32 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:23:34 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 14s
+Tue Feb 15 10:23:34 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:38 CET 2022, INFO: SMA power meter reports 10262 Watt consumption from grid
+Tue Feb 15 10:23:42 CET 2022, INFO: Block received C0FDE06388777701057805490000000085C0FC
+Tue Feb 15 10:23:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:23:42 CET 2022, INFO: Charging current 14.0A set, 13.53A used
+Tue Feb 15 10:23:44 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 24s
+Tue Feb 15 10:23:44 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:23:51 CET 2022, INFO: Block received C0FDE063887777010578054A0000000086C0FC
+Tue Feb 15 10:23:51 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:23:51 CET 2022, INFO: Charging current 14.0A set, 13.54A used
+Tue Feb 15 10:23:53 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 10:23:54 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:01 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:24:01 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:24:04 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 10:24:04 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:04 CET 2022, INFO: Block received C0FDE063887777090578054D0000000091C0FC
+Tue Feb 15 10:24:04 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:24:04 CET 2022, INFO: Charging current 14.0A set, 13.57A used
+Tue Feb 15 10:24:06 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 12s
+Tue Feb 15 10:24:06 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:06 CET 2022, INFO: Block received C0FDE0638877770905780528000000006CC0FC
+Tue Feb 15 10:24:06 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:24:06 CET 2022, INFO: Charging current 14.0A set, 13.2A used
+Tue Feb 15 10:24:09 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 14s
+Tue Feb 15 10:24:09 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:15 CET 2022, INFO: Block received C0FDE063887777010578053D0000000079C0FC
+Tue Feb 15 10:24:15 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:24:15 CET 2022, INFO: Charging current 14.0A set, 13.41A used
+Tue Feb 15 10:24:18 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 24s
+Tue Feb 15 10:24:18 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:25 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:24:25 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:24:27 CET 2022, INFO: Charging current change from 14 to 14
+Tue Feb 15 10:24:28 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:28 CET 2022, INFO: Block received C0FDE06388777701057805390000000075C0FC
+Tue Feb 15 10:24:28 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:24:28 CET 2022, INFO: Charging current 14.0A set, 13.37A used
+Tue Feb 15 10:24:30 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:24:30 CET 2022, INFO: Block received C0FDE0638877770905780536000000007AC0FC
+Tue Feb 15 10:24:30 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:24:30 CET 2022, INFO: Charging current 14.0A set, 13.34A used
+Tue Feb 15 10:24:33 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC
+Tue Feb 15 10:24:38 CET 2022, INFO: SMA power meter reports 10192 Watt consumption from grid
+Tue Feb 15 10:24:39 CET 2022, INFO: Block received C0FDE0638877770905780539000000007DC0FC
+Tue Feb 15 10:24:39 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:24:39 CET 2022, INFO: Charging current 14.0A set, 13.37A used
+Tue Feb 15 10:24:42 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 14s
+Tue Feb 15 10:24:42 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:50 CET 2022, INFO: Block received C0FDE0638877770105780530000000006CC0FC
+Tue Feb 15 10:24:50 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:24:50 CET 2022, INFO: Charging current 14.0A set, 13.28A used
+Tue Feb 15 10:24:52 CET 2022, INFO: Charging current is set at 14A, Sending no-change to TWC, waiting since 24s
+Tue Feb 15 10:24:52 CET 2022, INFO: Sending block C0FBE07777638809057800000000003FC0
+Tue Feb 15 10:24:59 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:24:59 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:25:01 CET 2022, INFO: Charging current change from 14 to 15
+Tue Feb 15 10:25:02 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:25:02 CET 2022, INFO: Block received C0FDE06388777701057805350000000071C0FC
+Tue Feb 15 10:25:02 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:02 CET 2022, INFO: Charging current 14.0A set, 13.33A used
+Tue Feb 15 10:25:04 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:25:04 CET 2022, INFO: Sending block C0FBE0777763880905DDBDC000000000A3C0
+Tue Feb 15 10:25:09 CET 2022, INFO: Block received C0FDE0638877770105780520000000005CC0FC
+Tue Feb 15 10:25:09 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:09 CET 2022, INFO: Charging current 14.0A set, 13.12A used
+Tue Feb 15 10:25:12 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:25:20 CET 2022, INFO: Block received C0FDE063887777010578051E000000005AC0FC
+Tue Feb 15 10:25:20 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:20 CET 2022, INFO: Charging current 14.0A set, 13.1A used
+Tue Feb 15 10:25:22 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:25:29 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:25:29 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:25:32 CET 2022, INFO: Charging current is set at 15A, Sending no-change to TWC
+Tue Feb 15 10:25:32 CET 2022, INFO: Block received C0FDE06388777701057805150000000051C0FC
+Tue Feb 15 10:25:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:32 CET 2022, INFO: Charging current 14.0A set, 13.01A used
+Tue Feb 15 10:25:34 CET 2022, INFO: Charging current change from 15 to 17
+Tue Feb 15 10:25:34 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:25:34 CET 2022, INFO: Block received C0FDE0638877770906A4051A000000008BC0FC
+Tue Feb 15 10:25:34 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:25:34 CET 2022, INFO: Charging current 17.0A set, 13.06A used
+Tue Feb 15 10:25:37 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:25:37 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:25:38 CET 2022, INFO: SMA power meter reports 8764 Watt consumption from grid
+Tue Feb 15 10:25:43 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:25:43 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:25:46 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC
+Tue Feb 15 10:25:46 CET 2022, INFO: Block received C0FDE0638877770906A4050D000000007EC0FC
+Tue Feb 15 10:25:46 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:25:46 CET 2022, INFO: Charging current 17.0A set, 12.93A used
+Tue Feb 15 10:25:48 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 10:25:48 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:25:48 CET 2022, INFO: Block received C0FDE0638877770106A4050D0000000076C0FC
+Tue Feb 15 10:25:48 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:48 CET 2022, INFO: Charging current 17.0A set, 12.93A used
+Tue Feb 15 10:25:51 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 10:25:51 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:25:57 CET 2022, INFO: Block received C0FDE0638877770106A405080000000071C0FC
+Tue Feb 15 10:25:57 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:25:57 CET 2022, INFO: Charging current 17.0A set, 12.88A used
+Tue Feb 15 10:26:00 CET 2022, INFO: Charging current is set at 17A, Sending no-change to TWC, waiting since 25s
+Tue Feb 15 10:26:00 CET 2022, INFO: Sending block C0FBE0777763880906A400000000006CC0
+Tue Feb 15 10:26:07 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:26:07 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:26:09 CET 2022, INFO: Charging current change from 17 to 19
+Tue Feb 15 10:26:10 CET 2022, INFO: Sending block C0FBE07777638809076DBDC00000000035C0
+Tue Feb 15 10:26:10 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:10 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:10 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:11 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:11 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:11 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:11 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:12 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:12 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:12 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:12 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:13 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:13 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:13 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:14 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:14 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:14 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:14 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:15 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:15 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:15 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:15 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:16 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:16 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:16 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:16 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:17 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:17 CET 2022, WARNING: Block checksum failed C0000000075C0FC
+Tue Feb 15 10:26:18 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:26:18 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:26:20 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC, waiting since 10s
+Tue Feb 15 10:26:20 CET 2022, INFO: Sending block C0FBE07777638809076DBDC00000000035C0
+Tue Feb 15 10:26:27 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:26:27 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:26:30 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC, waiting since 20s
+Tue Feb 15 10:26:30 CET 2022, INFO: Sending block C0FBE07777638809076DBDC00000000035C0
+Tue Feb 15 10:26:30 CET 2022, INFO: Block received C0FDE0638877770106A40502000000006BC0FC
+Tue Feb 15 10:26:30 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:26:30 CET 2022, INFO: Charging current 17.0A set, 12.82A used
+Tue Feb 15 10:26:32 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC
+Tue Feb 15 10:26:32 CET 2022, INFO: Block received C0FDE0638877770106A404F5000000005DC0FC
+Tue Feb 15 10:26:32 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:26:32 CET 2022, INFO: Charging current 17.0A set, 12.69A used
+Tue Feb 15 10:26:35 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC
+Tue Feb 15 10:26:38 CET 2022, INFO: SMA power meter reports 8714 Watt consumption from grid
+Tue Feb 15 10:26:42 CET 2022, INFO: Block received C0FDE0638877770106A404FB0000000063C0FC
+Tue Feb 15 10:26:42 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:26:42 CET 2022, INFO: Charging current 17.0A set, 12.75A used
+Tue Feb 15 10:26:44 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC
+Tue Feb 15 10:26:51 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:26:51 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:26:54 CET 2022, INFO: Charging current is set at 19A, Sending no-change to TWC
+Tue Feb 15 10:26:54 CET 2022, INFO: Block received C0FDE0638877770106A404F10000000059C0FC
+Tue Feb 15 10:26:54 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:26:54 CET 2022, INFO: Charging current 17.0A set, 12.65A used
+Tue Feb 15 10:26:56 CET 2022, INFO: Charging current change from 19 to 21
+Tue Feb 15 10:26:56 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:26:56 CET 2022, INFO: Block received C0FDE06388777709083404F100000000F3C0FC
+Tue Feb 15 10:26:56 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:26:56 CET 2022, INFO: Charging current 21.0A set, 12.65A used
+Tue Feb 15 10:26:59 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 2s
+Tue Feb 15 10:26:59 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:27:05 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:27:05 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:27:07 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC
+Tue Feb 15 10:27:08 CET 2022, INFO: Block received C0FDE06388777709083404F100000000F3C0FC
+Tue Feb 15 10:27:08 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:27:08 CET 2022, INFO: Charging current 21.0A set, 12.65A used
+Tue Feb 15 10:27:10 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 13s
+Tue Feb 15 10:27:10 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:27:10 CET 2022, INFO: Block received C0FDE06388777701083404ED00000000E7C0FC
+Tue Feb 15 10:27:10 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:27:10 CET 2022, INFO: Charging current 21.0A set, 12.61A used
+Tue Feb 15 10:27:13 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 16s
+Tue Feb 15 10:27:13 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:27:19 CET 2022, INFO: Block received C0FDE06388777701083404E400000000DEC0FC
+Tue Feb 15 10:27:19 CET 2022, INFO: Car plugged in, charging
+Tue Feb 15 10:27:19 CET 2022, INFO: Charging current 21.0A set, 12.52A used
+Tue Feb 15 10:27:22 CET 2022, INFO: Charging current is set at 21A, Sending no-change to TWC, waiting since 25s
+Tue Feb 15 10:27:22 CET 2022, INFO: Sending block C0FBE0777763880908340000000000FEC0
+Tue Feb 15 10:27:29 CET 2022, INFO: Block received C0FDE06388777703025800000000000016C0FC
+Tue Feb 15 10:27:29 CET 2022, INFO: Car plugged in, not charging
+Tue Feb 15 10:27:29 CET 2022, INFO: Charging current 6.0A set, 0.0A used
+Tue Feb 15 10:27:31 CET 2022, INFO: Charging current change from 21 to 32
+Tue Feb 15 10:27:32 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:38 CET 2022, INFO: SMA power meter reports 1457 Watt consumption from grid
+Tue Feb 15 10:27:39 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:27:39 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:27:42 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 9s
+Tue Feb 15 10:27:42 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:42 CET 2022, INFO: Block received C0FDE063887777090C800000000000004EC0FC
+Tue Feb 15 10:27:42 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:27:42 CET 2022, INFO: Charging current 32.0A set, 0.0A used
+Tue Feb 15 10:27:44 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 12s
+Tue Feb 15 10:27:44 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:44 CET 2022, INFO: Block received C0FDE063887777090C800000000000004EC0FC
+Tue Feb 15 10:27:44 CET 2022, INFO: Slave acknowledges reception of command code 9
+Tue Feb 15 10:27:44 CET 2022, INFO: Charging current 32.0A set, 0.0A used
+Tue Feb 15 10:27:47 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 15s
+Tue Feb 15 10:27:47 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:53 CET 2022, INFO: Block received C0FDE26388A70C80000000000000000000C0FC
+Tue Feb 15 10:27:53 CET 2022, INFO: Received slave linkReady block, ignoring
+Tue Feb 15 10:27:56 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 23s
+Tue Feb 15 10:27:56 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:56 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:27:56 CET 2022, INFO: Charger ready
+Tue Feb 15 10:27:56 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:27:58 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 26s
+Tue Feb 15 10:27:58 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:27:58 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:27:58 CET 2022, INFO: Charger ready
+Tue Feb 15 10:27:58 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:28:01 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 10:28:01 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:28:07 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:28:07 CET 2022, INFO: Charger ready
+Tue Feb 15 10:28:07 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:28:09 CET 2022, INFO: Charging current change from 32 to 32
+Tue Feb 15 10:28:10 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:28:18 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:28:18 CET 2022, INFO: Charger ready
+Tue Feb 15 10:28:18 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:28:20 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 10s
+Tue Feb 15 10:28:20 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:28:28 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:28:28 CET 2022, INFO: Charger ready
+Tue Feb 15 10:28:28 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:28:30 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 20s
+Tue Feb 15 10:28:30 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
+Tue Feb 15 10:28:37 CET 2022, INFO: Block received C0FDE063887777000000000000000000B9C0FC
+Tue Feb 15 10:28:37 CET 2022, INFO: Charger ready
+Tue Feb 15 10:28:37 CET 2022, INFO: Charging current 0.0A set, 0.0A used
+Tue Feb 15 10:28:38 CET 2022, INFO: SMA power meter reports 267 Watt consumption from grid
+Tue Feb 15 10:28:40 CET 2022, INFO: Charging current is set at 32A, Sending no-change to TWC, waiting since 29s
+Tue Feb 15 10:28:40 CET 2022, INFO: Sending block C0FBE077776388090C8000000000004EC0
