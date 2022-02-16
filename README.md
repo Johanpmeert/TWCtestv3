@@ -21,4 +21,4 @@ Since charging an electric car is by far the highest power draw, regulating this
 - the car to be charged (slowly) 24/7 without any limitations needing to be set in the car/app
 - the maximum power draw to be known in advance
 
-Experimenting with the setting of the maximum power draw from the grid will allow to minimize the cost while being sure that the can be fully charged.
+Experimenting with the setting of the maximum power draw from the grid will allow to minimize the cost while being sure that the car can be fully charged.
