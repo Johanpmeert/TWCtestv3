@@ -12,7 +12,7 @@ Basically the program has 3 functions:
 
 You can set the maximum power drawn from the grid.
 The program will instruct the Tesla wall charger (set as slave) so that the power consumption from the grid never exceeds this set value.
-This will work even with additional injection by solar panels or home batteries. It uses 30 second intervals to egulate the power draw.
+This will work even with additional injection by solar panels or home batteries. It uses 30 second intervals to regulate the power draw.
 
 A log file (TWC.log) is created and contains any and all communication with the TWC. The same output is also given on the console.
 
