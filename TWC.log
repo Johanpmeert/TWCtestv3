@@ -1,8 +1,0 @@
-Wed Feb 16 09:24:40 CET 2022, INFO: This Master is set at Id 7777
-Wed Feb 16 09:24:40 CET 2022, INFO: SMA power meter started on Thread
-Wed Feb 16 09:24:40 CET 2022, INFO: Opening SMA multicast socket from 192.168.2.147
-Wed Feb 16 09:24:40 CET 2022, INFO: Web server started on Thread
-Wed Feb 16 09:24:40 CET 2022, INFO: Opening RS485 port ttyUSB0
-Wed Feb 16 09:24:40 CET 2022, INFO: Sending out SMA specific discovery code 534D4100000402A0FFFFFFFF0000002000000000 to multicast address 239.12.255.254/9522
-Wed Feb 16 09:24:40 CET 2022, INFO: Port ttyUSB0 opened
-Wed Feb 16 09:24:41 CET 2022, INFO: SMA power meter reports 1987 Watt consumption from grid
