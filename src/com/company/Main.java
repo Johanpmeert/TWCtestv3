@@ -10,19 +10,21 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Properties;
 import java.util.logging.*;
 
 public class Main {
 
     // RS485 settings
     // static final String PORT = "COM3"; // windows
-    static final String PORT = "ttyUSB0"; // raspberry Pi zero W
+    static String RS485_PORT; // raspberry Pi zero W
     // General system defaults
-    static final double MAX_POWER_FROM_MAINS = 10000.0;  // in Watt
-    static final String MASTER_ID = "7777";
+    static double MAX_POWER_FROM_MAINS;  // in Watt
+    static String MASTER_ID;
     static final String MASTER_SIGN = "77";
     // Web server settings
-    static final int HTTP_PORT = 8085;
+    static int HTTP_PORT;
+    ;
     static final String NEW_LINE = "\r\n";
     public static volatile String webResponse = "Tesla Wall charger controller booting...";
     // Global variables
@@ -60,6 +62,18 @@ public class Main {
         for (Handler handler : handlers) {
             handler.setFormatter(formatter);
         }
+        // Config file read-in
+        File configFile = new File("config.txt");
+        FileReader fReader = new FileReader(configFile);
+        Properties props = new Properties();
+        props.load(fReader);
+        fReader.close();
+        HTTP_PORT = Integer.parseInt(props.getProperty("http_port", "8085"));
+        MAX_POWER_FROM_MAINS = Double.parseDouble(props.getProperty("max_power_from_mains", "10000.0"));
+        MASTER_ID = props.getProperty("master_id", "7777");
+        RS485_PORT = props.getProperty("rs485_port", "ttyUSB0");
+        if (logging) logger.info("Config file read");
+        // Master id logging
         if (logging) logger.info("This Master is set at Id " + MASTER_ID);
         // start SMA interrogation on separate thread
         SmaThread smaT = new SmaThread("sma");
@@ -72,12 +86,12 @@ public class Main {
         webServerThread.start();
         if (logging) logger.info("Web server started on Thread");
         // Open RS485 port to Tesla Wall Charger
-        SerialPort comPort = SerialPort.getCommPort(PORT);
+        SerialPort comPort = SerialPort.getCommPort(RS485_PORT);
         if (logging) logger.info("Opening RS485 port " + comPort.getSystemPortName());
         comPort.setComPortParameters(9600, 8, 1, SerialPort.NO_PARITY, true);
         comPort.setRs485ModeParameters(true, false, 5, 5);
         comPort.openPort();
-        if (logging) logger.info("Port " + PORT + " opened");
+        if (logging) logger.info("Port " + RS485_PORT + " opened");
         // Get first block
         String block;
         do {
@@ -305,11 +319,11 @@ public class Main {
         sb.append("------------------------------------").append(NEW_LINE).append(NEW_LINE);
         sb.append("Master Id: ").append(MASTER_ID).append(NEW_LINE);
         sb.append("Slave  Id: ").append(slaveId).append(", charger is capable of ").append(maxAmps).append("A").append(NEW_LINE).append(NEW_LINE);
-        sb.append("Maximum power draw from mains set at: ").append(String.format("%5.0f",MAX_POWER_FROM_MAINS)).append("W").append(NEW_LINE);
+        sb.append("Maximum power draw from mains set at: ").append(String.format("%5.0f", MAX_POWER_FROM_MAINS)).append("W").append(NEW_LINE);
         sb.append("Current power consumption from mains: ").append(String.format("%5.0f", currentPowerConsumption)).append("W").append(NEW_LINE);
         sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W").append(NEW_LINE).append(NEW_LINE);
         sb.append("Current amps from mains   : ").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A").append(NEW_LINE);
-        sb.append("Current amp setting on TWC: ").append(String.format("%4.1f",(double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
+        sb.append("Current amp setting on TWC: ").append(String.format("%4.1f", (double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         sb.append("Time stamp: ").append(dtf.format(LocalDateTime.now()));
         webResponse = sb.toString();
@@ -327,36 +341,49 @@ public class Main {
         public void run() {
             final String sma_multicastIp = "239.12.255.254";
             final int sma_multicastPort = 9522;
-            final String myHostIpAddress = "192.168.2.147";  // change here to your PC ip address
-            final long SMAserial = 3004908651L;
-            if (logging) logger.info("Opening SMA multicast socket from " + myHostIpAddress);
+            String myHostIpAddress = null;
             try {
-                InetAddress mcastAddr = InetAddress.getByName(sma_multicastIp);
-                InetSocketAddress group = new InetSocketAddress(mcastAddr, sma_multicastPort);
-                NetworkInterface netIf = NetworkInterface.getByName(myHostIpAddress);
-                MulticastSocket mcSocket = new MulticastSocket(sma_multicastPort);
-                mcSocket.joinGroup(group, netIf);
-                byte[] txbuf = hexStringToByteArray("534d4100000402a0ffffffff0000002000000000");  // discovery string to be sent to network, all SMA devices will answer
-                if (logging)
-                    logger.info("Sending out SMA specific discovery code " + byteArrayToHexString(txbuf) + " to multicast address " + sma_multicastIp + "/" + sma_multicastPort);
-                DatagramPacket data = new DatagramPacket(txbuf, txbuf.length, mcastAddr, sma_multicastPort);
-                mcSocket.send(data);
-                byte[] buffer = new byte[1024];
-                data = new DatagramPacket(buffer, buffer.length);
-                long intervalCounter = 0;
-                while (true) {
-                    mcSocket.receive(data);
-                    byte[] slice = Arrays.copyOfRange(buffer, 0, data.getLength());
-                    smaResponseData smaR = parseSmaResponse(slice);
-                    if ((smaR != null) && (smaR.serial == SMAserial)) {
-                        currentPowerConsumption = smaR.power3f.doubleValue();
-                        if ((logging) && (intervalCounter % 60 == 0)) // about once every minute
-                            logger.info("SMA power meter reports " + (int) currentPowerConsumption + " Watt consumption from grid");
-                        intervalCounter++;
+                myHostIpAddress = Inet4Address.getLocalHost().getHostAddress();
+            } catch (UnknownHostException e) {
+                logger.info("SMA: Host ip address could not be found");
+            }
+            // final String myHostIpAddress = "192.168.2.147";  // change here to your PC ip address
+            final long SMAserial = 3004908651L; // serial number of the SMA energy meter you want to read out
+            while (true) {
+                if (logging) logger.info("Opening SMA multicast socket from " + myHostIpAddress);
+                try {
+                    InetAddress mcastAddr = InetAddress.getByName(sma_multicastIp);
+                    InetSocketAddress group = new InetSocketAddress(mcastAddr, sma_multicastPort);
+                    NetworkInterface netIf = NetworkInterface.getByName(myHostIpAddress);
+                    MulticastSocket mcSocket = new MulticastSocket(sma_multicastPort);
+                    mcSocket.joinGroup(group, netIf);
+                    byte[] txbuf = hexStringToByteArray("534d4100000402a0ffffffff0000002000000000");  // discovery string to be sent to network, all SMA devices will answer
+                    if (logging)
+                        logger.info("Sending out SMA specific discovery code " + byteArrayToHexString(txbuf) + " to multicast address " + sma_multicastIp + "/" + sma_multicastPort);
+                    DatagramPacket data = new DatagramPacket(txbuf, txbuf.length, mcastAddr, sma_multicastPort);
+                    mcSocket.send(data);
+                    byte[] buffer = new byte[1024];
+                    data = new DatagramPacket(buffer, buffer.length);
+                    long watchDog = System.nanoTime();
+                    long showCounter = 0;
+                    while ((System.nanoTime() - watchDog) < 30e9) {
+                        mcSocket.receive(data);
+                        byte[] slice = Arrays.copyOfRange(buffer, 0, data.getLength());
+                        smaResponseData smaR = parseSmaResponse(slice);
+                        if ((smaR != null) && (smaR.serial == SMAserial)) {
+                            watchDog = System.nanoTime();
+                            showCounter++;
+                            currentPowerConsumption = smaR.power3f.doubleValue();
+                            if ((logging) && (showCounter % 65 == 0)) {
+                                logger.info("SMA power meter reports " + (int) currentPowerConsumption + " Watt consumption from grid");
+                            }
+                        }
                     }
+                    logger.info("SMA: watchDog timer exceeded, restarting multicast");
+                    mcSocket.close();
+                } catch (IOException e) {
+                    logger.warning("SMA: Multicast failed");
                 }
-            } catch (IOException e) {
-                System.out.println(e);
             }
         }
     }
