@@ -26,3 +26,23 @@ Experimenting with the setting of the maximum power draw from the grid will allo
 My hardware:
 - raspberry pi zero W, with java installed with command 'sudo apt install openjdk-8-jre-zero'
 - RS485 adapter from amazon, arceli ftdi ft232rl usb/ttl/rs485
+
+Contents of a typical config.txt file:
+# config file
+#
+# port specifies the http port where the webpage is
+http_port = 8085
+#
+# max_power_from_mains is the maximum power in Watt that you want drawn from the mains
+max_power_from_mains = 10000.0
+#
+# master_id is the 2 byte hex code the master will use
+master_id = 7777
+#
+# rs485_port is the specific string to open the RS485 port
+# windows mostly uses a com port like COM3
+# raspberry pi with a RS485 usb dongle uses something like ttyUSB0
+rs485_port = ttyUSB0
+#
+#sma_serial is the serial nr of the SMA energy meter or SMA home manager
+sma_serial = 3004908651
