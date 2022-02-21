@@ -64,6 +64,36 @@ public class Main {
         }
         // Config file read-in
         File configFile = new File("config.txt");
+        if (!configFile.exists()) {
+            if (logging) logger.info("Config file does not exist, creating");
+            boolean result = configFile.createNewFile();
+            if (result) {
+                FileWriter fWriter = new FileWriter(configFile);
+                fWriter.write("# config file\r\n" +
+                        "#\r\n" +
+                        "# port specifies the http port where the webpage is\r\n" +
+                        "http_port = 8085\r\n" +
+                        "#\r\n" +
+                        "# max_power_from_mains is the maximum power in Watt that you want drawn from the mains\r\n" +
+                        "max_power_from_mains = 10000.0\r\n" +
+                        "#\r\n" +
+                        "# master_id is the 2 byte hex code the master will use\r\n" +
+                        "master_id = 7777\r\n" +
+                        "#\r\n" +
+                        "# rs485_port is the specific string to open the RS485 port\r\n" +
+                        "# windows mostly uses a com port like COM3\r\n" +
+                        "# raspberry pi with a RS485 usb dongle uses something like ttyUSB0\r\n" +
+                        "rs485_port = ttyUSB0\r\n" +
+                        "#\r\n" +
+                        "#sma_serial is the serial nr of the SMA energy meter or SMA home manager\r\n" +
+                        "sma_serial = 3004908651");
+                fWriter.close();
+            } else {
+                if (logging) logger.warning("Could not create config.txt file");
+            }
+        } else {
+            if (logging) logger.info("Existing config.txt file found, reading...");
+        }
         FileReader fReader = new FileReader(configFile);
         Properties props = new Properties();
         props.load(fReader);
@@ -73,7 +103,6 @@ public class Main {
         MASTER_ID = props.getProperty("master_id", "7777");
         RS485_PORT = props.getProperty("rs485_port", "ttyUSB0");
         SMA_SERIAL = Long.parseLong(props.getProperty("sma_serial", "3004908651"));
-        if (logging) logger.info("Config file read");
         // Master id logging
         if (logging) logger.info("This Master is set at Id " + MASTER_ID);
         // start SMA interrogation on separate thread
