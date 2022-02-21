@@ -28,8 +28,13 @@ My hardware:
 - RS485 adapter from amazon, arceli ftdi ft232rl usb/ttl/rs485
 
 Contents of a typical config.txt file:
+
 http_port = 8085
+
 max_power_from_mains = 10000.0
+
 master_id = 7777
+
 rs485_port = ttyUSB0
+
 sma_serial = 3004908651
