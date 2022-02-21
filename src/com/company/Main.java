@@ -16,7 +16,6 @@ import java.util.logging.*;
 public class Main {
 
     // RS485 settings
-    // static final String PORT = "COM3"; // windows
     static String RS485_PORT; // raspberry Pi zero W
     // General system defaults
     static double MAX_POWER_FROM_MAINS;  // in Watt
@@ -24,9 +23,10 @@ public class Main {
     static final String MASTER_SIGN = "77";
     // Web server settings
     static int HTTP_PORT;
-    ;
     static final String NEW_LINE = "\r\n";
     public static volatile String webResponse = "Tesla Wall charger controller booting...";
+    // SMA energy reader or SMA home manager
+    static long SMA_SERIAL;
     // Global variables
     static String slaveId;
     static String slaveSign;
@@ -72,6 +72,7 @@ public class Main {
         MAX_POWER_FROM_MAINS = Double.parseDouble(props.getProperty("max_power_from_mains", "10000.0"));
         MASTER_ID = props.getProperty("master_id", "7777");
         RS485_PORT = props.getProperty("rs485_port", "ttyUSB0");
+        SMA_SERIAL = Long.parseLong(props.getProperty("sma_serial", "3004908651"));
         if (logging) logger.info("Config file read");
         // Master id logging
         if (logging) logger.info("This Master is set at Id " + MASTER_ID);
@@ -347,8 +348,6 @@ public class Main {
             } catch (UnknownHostException e) {
                 logger.info("SMA: Host ip address could not be found");
             }
-            // final String myHostIpAddress = "192.168.2.147";  // change here to your PC ip address
-            final long SMAserial = 3004908651L; // serial number of the SMA energy meter you want to read out
             while (true) {
                 if (logging) logger.info("Opening SMA multicast socket from " + myHostIpAddress);
                 try {
@@ -366,11 +365,11 @@ public class Main {
                     data = new DatagramPacket(buffer, buffer.length);
                     long watchDog = System.nanoTime();
                     long showCounter = 0;
-                    while ((System.nanoTime() - watchDog) < 30e9) {
+                    while ((System.nanoTime() - watchDog) < 30e9) { // 30 sec watchdog check
                         mcSocket.receive(data);
                         byte[] slice = Arrays.copyOfRange(buffer, 0, data.getLength());
                         smaResponseData smaR = parseSmaResponse(slice);
-                        if ((smaR != null) && (smaR.serial == SMAserial)) {
+                        if ((smaR != null) && (smaR.serial == SMA_SERIAL)) {
                             watchDog = System.nanoTime();
                             showCounter++;
                             currentPowerConsumption = smaR.power3f.doubleValue();
@@ -379,7 +378,7 @@ public class Main {
                             }
                         }
                     }
-                    logger.info("SMA: watchDog timer exceeded, restarting multicast");
+                    logger.warning("SMA: watchDog timer exceeded, restarting multicast");
                     mcSocket.close();
                 } catch (IOException e) {
                     logger.warning("SMA: Multicast failed");
@@ -452,10 +451,10 @@ public class Main {
 
     public static class smaResponseData {
         long serial;
-        BigDecimal power3f;
-        BigDecimal powerL1;
-        BigDecimal powerL2;
-        BigDecimal powerL3;
+        BigDecimal power3f = BigDecimal.ZERO;
+        BigDecimal powerL1 = BigDecimal.ZERO;
+        BigDecimal powerL2 = BigDecimal.ZERO;
+        BigDecimal powerL3 = BigDecimal.ZERO;
     }
 
     enum internalData {
