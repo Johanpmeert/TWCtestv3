@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.Properties;
 import java.util.logging.*;
 
@@ -20,7 +21,7 @@ public class Main {
     // General system defaults
     static double MAX_POWER_FROM_MAINS;  // in Watt
     static String MASTER_ID;
-    static final String MASTER_SIGN = "77";
+    static final String MASTER_SIGN = "77"; // not used at this time
     // Web server settings
     static int HTTP_PORT;
     static final String NEW_LINE = "\r\n";
@@ -69,24 +70,24 @@ public class Main {
             boolean result = configFile.createNewFile();
             if (result) {
                 FileWriter fWriter = new FileWriter(configFile);
-                fWriter.write("# config file\r\n" +
-                        "#\r\n" +
-                        "# port specifies the http port where the webpage is\r\n" +
-                        "http_port = 8085\r\n" +
-                        "#\r\n" +
-                        "# max_power_from_mains is the maximum power in Watt that you want drawn from the mains\r\n" +
-                        "max_power_from_mains = 10000.0\r\n" +
-                        "#\r\n" +
-                        "# master_id is the 2 byte hex code the master will use\r\n" +
-                        "master_id = 7777\r\n" +
-                        "#\r\n" +
-                        "# rs485_port is the specific string to open the RS485 port\r\n" +
-                        "# windows mostly uses a com port like COM3\r\n" +
-                        "# raspberry pi with a RS485 usb dongle uses something like ttyUSB0\r\n" +
-                        "rs485_port = ttyUSB0\r\n" +
-                        "#\r\n" +
-                        "#sma_serial is the serial nr of the SMA energy meter or SMA home manager\r\n" +
-                        "sma_serial = 3004908651");
+                fWriter.write("# config file" + NEW_LINE +
+                        "#" + NEW_LINE +
+                        "# port specifies the http port where the webpage is" + NEW_LINE +
+                        "http_port = 8085" + NEW_LINE +
+                        "#" + NEW_LINE +
+                        "# max_power_from_mains is the maximum power in Watt that you want drawn from the mains" + NEW_LINE +
+                        "max_power_from_mains = 10000.0" + NEW_LINE +
+                        "#" + NEW_LINE +
+                        "# master_id is the 2 byte hex code the master will use" + NEW_LINE +
+                        "master_id = 7777" + NEW_LINE +
+                        "#" + NEW_LINE +
+                        "# rs485_port is the specific string to open the RS485 port" + NEW_LINE +
+                        "# windows mostly uses a com port like COM3" + NEW_LINE +
+                        "# raspberry pi with a RS485 usb dongle uses something like ttyUSB0" + NEW_LINE +
+                        "rs485_port = ttyUSB0" + NEW_LINE +
+                        "#" + NEW_LINE +
+                        "#sma_serial is the serial nr of the SMA energy meter or SMA home manager" + NEW_LINE +
+                        "sma_serial = 3004908651" + NEW_LINE);
                 fWriter.close();
             } else {
                 if (logging) logger.warning("Could not create config.txt file");
@@ -189,7 +190,7 @@ public class Main {
             double decodeSetAmps = decodeAmps(byte23);
             String byte45 = dataBlock.substring(6, 10);
             double decodeIsAmps = decodeAmps(byte45);
-            logger.info("Charging current " + decodeSetAmps + "A set, " + decodeIsAmps + "A used");
+            logger.info("TWC reports charging current " + decodeSetAmps + " A set, " + decodeIsAmps + " A used");
         } else if (strippedBlock.startsWith("FDE2")) {
             logger.info("Received slave linkReady block, ignoring");
         }
@@ -198,26 +199,20 @@ public class Main {
     public static void respondToBlock(SerialPort sp, String block) throws InterruptedException {
         Thread.sleep(2000);
         int waitingTime = (int) ((System.nanoTime() - startTime) / 1e9);
-        if ((currentPowerConsumption < MAX_POWER_FROM_MAINS) && (currentPowerConsumption + 1000 > MAX_POWER_FROM_MAINS)) {
-            sendBlock(sp, prepareBlock("FBE0" + MASTER_ID + slaveId + "00000000000000"));
-            if (logging) logger.info("Charging current is set at " + currentTWCamps + "A, Sending no-change to TWC");
+        int oldAmps = currentTWCamps;
+        if (waitingTime > 45) {  // only allow changing amps every 45 seconds
+            startTime = System.nanoTime(); // reset the timecounter
+            double differenceInAmps = (MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3; // 1.44e-3 = 1/(400*sqrt(3))
+            currentTWCamps = currentTWCamps + (int) Math.round(differenceInAmps);
+            if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
+            if (logging) logger.info("Charging current change from " + oldAmps + " A to " + currentTWCamps + " A");
         } else {
-            int oldAmps = currentTWCamps;
-            if (waitingTime < 30) {  // only allow changing amps every 30 seconds
-                sendBlock(sp, prepareBlock("FBE0" + MASTER_ID + slaveId + "00000000000000"));
-                if (logging)
-                    logger.info("Charging current is set at " + currentTWCamps + "A, Sending no-change to TWC, waiting since " + waitingTime + "s");
-            } else {
-                startTime = System.nanoTime(); // reset the timecounter
-                double differenceInAmps = (MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3; // 1.44e-3 = 1/(400*sqrt(3))
-                currentTWCamps = currentTWCamps + (int) Math.round(differenceInAmps);
-                if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
-                if (logging) logger.info("Charging current change from " + oldAmps + " to " + currentTWCamps);
-                sendBlock(sp, prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps)));
-            }
             if (logging)
-                logger.info("Sending block " + prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps)));
+                logger.info("Charging current kept at " + currentTWCamps + " A, wait time " + waitingTime + " sec");
         }
+        String blockToSend = prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
+        sendBlock(sp, blockToSend);
+        if (logging) logger.info("Sending block " + blockToSend);
     }
 
     public static String getNextBlock(SerialPort sp) throws InterruptedException {
@@ -250,7 +245,7 @@ public class Main {
     }
 
     public static String cleanUpBlock(String rawblock) {
-        int posC0 = (rawblock.substring(0, rawblock.length() - 4)).lastIndexOf("C0");
+        int posC0 = (rawblock.substring(0, rawblock.length() - 4)).lastIndexOf("C0");  // take out the COFC at the end and then look for the last occurrence of C0, that will be the start of a block
         return rawblock.substring(posC0);
     }
 
@@ -270,18 +265,18 @@ public class Main {
     }
 
     public static String escapeBlock(String block) {
-        block = block.replaceAll("DB", "DBDD");
+        block = block.replaceAll("DB", "DBDD"); // this order is important, DB before C0
         block = block.replaceAll("C0", "DBDC");
         return block;
     }
 
     public static String calculateChecksum(String block) {
         int checksum = 0;
-        // do not include first byte in checksum calculation
+        // do not include first byte in checksum calculation, so teller = 1
         for (int teller = 1; teller < block.length() / 2; teller++) {
             checksum += Integer.parseInt(block.substring(teller * 2, (teller + 1) * 2), 16);
         }
-        String checksumString = Integer.toHexString(checksum & 0xFF).toUpperCase();
+        String checksumString = Integer.toHexString(checksum & 0xFF).toUpperCase();  // only the least significant byte matters
         if (checksumString.length() == 1) {
             checksumString = "0" + checksumString;
         }
@@ -371,12 +366,7 @@ public class Main {
         public void run() {
             final String sma_multicastIp = "239.12.255.254";
             final int sma_multicastPort = 9522;
-            String myHostIpAddress = null;
-            try {
-                myHostIpAddress = Inet4Address.getLocalHost().getHostAddress();
-            } catch (UnknownHostException e) {
-                logger.info("SMA: Host ip address could not be found");
-            }
+            String myHostIpAddress = getIpAddress();
             while (true) {
                 if (logging) logger.info("Opening SMA multicast socket from " + myHostIpAddress);
                 try {
@@ -407,10 +397,10 @@ public class Main {
                             }
                         }
                     }
-                    logger.warning("SMA: watchDog timer exceeded, restarting multicast");
+                    if (logging) logger.warning("SMA: watchDog timer exceeded, reconnecting multicast socket");
                     mcSocket.close();
                 } catch (IOException e) {
-                    logger.warning("SMA: Multicast failed");
+                    if (logging) logger.warning("SMA: Multicast failed");
                 }
             }
         }
@@ -539,12 +529,32 @@ public class Main {
                         }
                         pout.close();
                     } catch (Throwable tri) {
-                        logger.info("Http error handling request: " + tri);
+                        if (logging) logger.warning("Http error handling request: " + tri);
                     }
                 }
             } catch (Throwable tr) {
-                logger.warning("Could not start http server: " + tr);
+                if (logging) logger.warning("Could not start http server: " + tr);
             }
+        }
+    }
+
+    public static String getIpAddress() {
+        try {
+            Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+            while (interfaces.hasMoreElements()) {
+                NetworkInterface iface = interfaces.nextElement();
+                if (iface.isLoopback() || !iface.isUp()) continue;
+                Enumeration<InetAddress> addresses = iface.getInetAddresses();
+                while (addresses.hasMoreElements()) {
+                    InetAddress addr = addresses.nextElement();
+                    if (addr.isSiteLocalAddress()) {
+                        return addr.getHostAddress();
+                    }
+                }
+            }
+            return "";
+        } catch (SocketException e) {
+            throw new RuntimeException(e);
         }
     }
 

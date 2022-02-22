@@ -20,8 +20,8 @@ public class MainTest {
         Assert.assertTrue(isValidBlock("C0FDE26388950C800000000000000000EEC0FC"));
         Assert.assertTrue(isValidBlock("C0FDE063887777000000000000000000B9C0FC"));
         Assert.assertTrue(isValidBlock("C0FDE063887777090000000000000000C2C0FC"));
-        Assert.assertTrue(!isValidBlock("D0FDE063887777090000000000000000C2C0FC"));  // must start with C0
-        Assert.assertTrue(!isValidBlock("C0FDE063887777090000000000000000C2C1FC"));  // must end with C0FC
+        Assert.assertFalse(isValidBlock("D0FDE063887777090000000000000000C2C0FC"));  // must start with C0
+        Assert.assertFalse(isValidBlock("C0FDE063887777090000000000000000C2C1FC"));  // must end with C0FC
     }
 
     @Test
