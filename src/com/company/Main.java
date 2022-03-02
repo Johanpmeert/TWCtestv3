@@ -355,7 +355,8 @@ public class Main {
         sb.append("Slave  Id: ").append(slaveId).append(", charger is capable of ").append(maxAmps).append("A").append(NEW_LINE).append(NEW_LINE);
         sb.append("Maximum power draw from mains set at: ").append(String.format("%5.0f", MAX_POWER_FROM_MAINS)).append("W").append(NEW_LINE);
         sb.append("Current power consumption from mains: ").append(String.format("%5.0f", currentPowerConsumption)).append("W (").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A)").append(NEW_LINE);
-        sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCamps)).append("A)").append(NEW_LINE).append(NEW_LINE);
+        sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCamps)).append("A)").append(NEW_LINE);
+        sb.append("Reported power consumption by TWC   : ").append(String.format("%5.0f", currentTWCUsedAmps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCUsedAmps)).append("A)").append(NEW_LINE).append(NEW_LINE);
         //sb.append("Current amps from mains   : ").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A").append(NEW_LINE);
         //sb.append("Current amp setting on TWC: ").append(String.format("%4.1f", (double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
