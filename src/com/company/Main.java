@@ -238,12 +238,12 @@ public class Main {
                 block = block + byteArrayToHexString(readBuffer);
             }
             while (!block.endsWith("C0FC"));
-            block = cleanUpBlock(block);
-            if (isValidBlock(block)) {
-                if (logging) logger.info("Block received " + block);
+            String cleanBlock = cleanUpBlock(block);
+            if (isValidBlock(cleanBlock)) {
+                if (logging) logger.info("Block received " + cleanBlock);
                 return block;
             } else {
-                if (logging) logger.warning("Block checksum failed " + block);
+                if (logging) logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
             }
         }
     }
@@ -254,8 +254,13 @@ public class Main {
     }
 
     public static String cleanUpBlock(String rawblock) {
-        int posC0 = (rawblock.substring(0, rawblock.length() - 4)).lastIndexOf("C0");  // take out the COFC at the end and then look for the last occurrence of C0, that will be the start of a block
-        return rawblock.substring(posC0);
+        int posC0 = rawblock.length() - 6;
+        if (posC0 < 0) return "";
+        while ((posC0 >= 0) && (!rawblock.startsWith("C0", posC0))) {
+            posC0 = posC0 - 2;
+        }
+        if ((posC0 == 0) && (!rawblock.startsWith("C0"))) return "";
+        else return rawblock.substring(posC0);
     }
 
     public static boolean isValidBlock(String block) {
