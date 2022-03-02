@@ -14,5 +14,5 @@ master_id = 7777
 # raspberry pi with a RS485 usb dongle uses something like ttyUSB0
 rs485_port = ttyUSB0
 #
-#sma_serial is the serial nr of the SMA energy meter or SMA home manager
+# sma_serial is the serial nr of the SMA energy meter or SMA home manager
 sma_serial = 3004908651

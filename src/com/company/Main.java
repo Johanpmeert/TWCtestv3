@@ -20,6 +20,7 @@ public class Main {
     static String RS485_PORT; // raspberry Pi zero W
     // General system defaults
     static double MAX_POWER_FROM_MAINS;  // in Watt
+    static final int MIN_CHARGING_AMPS = 6;
     static String MASTER_ID;
     static final String MASTER_SIGN = "77"; // not used at this time
     // Web server settings
@@ -34,6 +35,7 @@ public class Main {
     static int maxAmps = 0; // read-in from slave
     static volatile double currentPowerConsumption = 0.0;
     static int currentTWCamps = 8;
+    static int currentTWCUsedAmps = -1;
     static long startTime;
     // Logging
     static Logger logger = Logger.getLogger("MyLog");
@@ -86,7 +88,7 @@ public class Main {
                         "# raspberry pi with a RS485 usb dongle uses something like ttyUSB0" + NEW_LINE +
                         "rs485_port = ttyUSB0" + NEW_LINE +
                         "#" + NEW_LINE +
-                        "#sma_serial is the serial nr of the SMA energy meter or SMA home manager" + NEW_LINE +
+                        "# sma_serial is the serial nr of the SMA energy meter or SMA home manager" + NEW_LINE +
                         "sma_serial = 3004908651" + NEW_LINE);
                 fWriter.close();
             } else {
@@ -190,6 +192,7 @@ public class Main {
             double decodeSetAmps = decodeAmps(byte23);
             String byte45 = dataBlock.substring(6, 10);
             double decodeIsAmps = decodeAmps(byte45);
+            currentTWCUsedAmps = (int) decodeIsAmps;
             logger.info("TWC reports charging current " + decodeSetAmps + " A set, " + decodeIsAmps + " A used");
         } else if (strippedBlock.startsWith("FDE2")) {
             logger.info("Received slave linkReady block, ignoring");
@@ -202,8 +205,14 @@ public class Main {
         int oldAmps = currentTWCamps;
         if (waitingTime > 45) {  // only allow changing amps every 45 seconds
             startTime = System.nanoTime(); // reset the timecounter
-            double differenceInAmps = (MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3; // 1.44e-3 = 1/(400*sqrt(3))
+            double differenceInAmps;// 1.44e-3 = 1/(400*sqrt(3))
+            if ((currentTWCUsedAmps == -1) || (Math.abs(currentTWCamps - currentTWCUsedAmps) < 2)) {
+                differenceInAmps = (MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3;
+            } else {
+                differenceInAmps = (MAX_POWER_FROM_MAINS - currentTWCamps * 400 * Math.sqrt(3.0)) * 1.44e-3;
+            }
             currentTWCamps = currentTWCamps + (int) Math.round(differenceInAmps);
+            if (currentTWCamps < MIN_CHARGING_AMPS) currentTWCamps = 0;
             if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
             if (logging) logger.info("Charging current change from " + oldAmps + " A to " + currentTWCamps + " A");
         } else {
@@ -345,10 +354,10 @@ public class Main {
         sb.append("Master Id: ").append(MASTER_ID).append(NEW_LINE);
         sb.append("Slave  Id: ").append(slaveId).append(", charger is capable of ").append(maxAmps).append("A").append(NEW_LINE).append(NEW_LINE);
         sb.append("Maximum power draw from mains set at: ").append(String.format("%5.0f", MAX_POWER_FROM_MAINS)).append("W").append(NEW_LINE);
-        sb.append("Current power consumption from mains: ").append(String.format("%5.0f", currentPowerConsumption)).append("W").append(NEW_LINE);
-        sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W").append(NEW_LINE).append(NEW_LINE);
-        sb.append("Current amps from mains   : ").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A").append(NEW_LINE);
-        sb.append("Current amp setting on TWC: ").append(String.format("%4.1f", (double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
+        sb.append("Current power consumption from mains: ").append(String.format("%5.0f", currentPowerConsumption)).append("W (").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A)").append(NEW_LINE);
+        sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCamps)).append("A)").append(NEW_LINE).append(NEW_LINE);
+        //sb.append("Current amps from mains   : ").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A").append(NEW_LINE);
+        //sb.append("Current amp setting on TWC: ").append(String.format("%4.1f", (double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         sb.append("Time stamp: ").append(dtf.format(LocalDateTime.now()));
         webResponse = sb.toString();
