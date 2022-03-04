@@ -34,9 +34,11 @@ public class Main {
     static String slaveSign;
     static int maxAmps = 0; // read-in from slave
     static volatile double currentPowerConsumption = 0.0;
+    static volatile double cuurentSolarPanelPower = 0.0;
     static int currentTWCamps = 8;
     static int currentTWCUsedAmps = -1;
     static long startTime;
+    static volatile boolean programStopCalled = false;
     // Logging
     static Logger logger = Logger.getLogger("MyLog");
     static boolean logging = true;
@@ -141,12 +143,13 @@ public class Main {
         if (logging) logger.info("Sending heartbeat block " + firstHeartbeat);
         sendBlock(comPort, firstHeartbeat);
         startTime = System.nanoTime();
-        while (true) {
+        while (!programStopCalled) {
             block = getNextBlock(comPort);
             displayBlockProperties(block);
             respondToBlock(comPort, block);
             updateWebServer();
         }
+        if (logging) logger.info("Program stop called, closing all connections... ");
     }
 
     public static void displayBlockProperties(String block) {
@@ -244,6 +247,7 @@ public class Main {
                 return block;
             } else {
                 if (logging) logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
+                block = ""; // drop failed block;
             }
         }
     }
@@ -382,7 +386,7 @@ public class Main {
             final String sma_multicastIp = "239.12.255.254";
             final int sma_multicastPort = 9522;
             String myHostIpAddress = getIpAddress();
-            while (true) {
+            while (!programStopCalled) {
                 if (logging) logger.info("Opening SMA multicast socket from " + myHostIpAddress);
                 try {
                     InetAddress mcastAddr = InetAddress.getByName(sma_multicastIp);
@@ -525,7 +529,7 @@ public class Main {
         public void run() {
             try {
                 ServerSocket socket = new ServerSocket(HTTP_PORT);
-                while (true) {
+                while (!programStopCalled) {
                     Socket connection = socket.accept();
                     try {
                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -540,6 +544,7 @@ public class Main {
                         if (!request.startsWith("GET ") || !(request.endsWith(" HTTP/1.0") || request.endsWith(" HTTP/1.1"))) {
                             pout.print("HTTP/1.0 400 Bad Request" + NEW_LINE + NEW_LINE);
                         } else {
+                            if (request.startsWith("GET /endprogram")) programStopCalled=true;
                             pout.print("HTTP/1.0 200 OK" + NEW_LINE + "Content-Type: text/plain" + NEW_LINE + "Date: " + new Date() + NEW_LINE + "Content-length: " + webResponse.length() + NEW_LINE + NEW_LINE + webResponse);
                         }
                         pout.close();
