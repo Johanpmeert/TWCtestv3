@@ -6,9 +6,11 @@ But this is entirely written in JAVA and can run on any Java 1.8, including a ra
 It uses only 1 external library: com.fazecast:JserialComm:2.9.0. This library does the RS485 communication and has a broad compatibility including arm v6 and v7 cpu.
 
 Basically the program has 3 functions:
-1. A background thread runs a super-small webserver so you can view the status remotely (port 8085)
+1. A background thread runs a super-small webserver so you can view the status remotely (standard on port 8085)
 2. A second thread communicates with an SMA Sunny home manager or SMA energy meter to find out the power consumption from the grid
 3. The main thread uses an RS485 port to show itself as as master to a Tesla wall charger (generation 2) and send commands to the slave
+
+You can stop the program by calling the website like xx.xx.xx.xx:8085/endprogram
 
 You can set the maximum power drawn from the grid.
 The program will instruct the Tesla wall charger (set as slave) so that the power consumption from the grid never exceeds this set value.
