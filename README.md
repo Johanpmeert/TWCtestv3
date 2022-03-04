@@ -26,7 +26,7 @@ Since charging an electric car is by far the highest power draw, regulating this
 Experimenting with the setting of the maximum power draw from the grid will allow to minimize the cost while being sure that the car can be fully charged.
 
 My hardware:
-- raspberry pi zero W, with java installed with command 'sudo apt install openjdk-8-jre-zero'
+- raspberry pi zero W, with java installed with command 'sudo apt install openjdk-8-jre-zero', with an added HAT to provide a RJ45 network connection
 - RS485 adapter from amazon, arceli ftdi ft232rl usb/ttl/rs485
 
 Contents of a typical config.txt file (one will be created if it does not exist):
