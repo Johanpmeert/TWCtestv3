@@ -267,10 +267,10 @@ public class Main {
 
     public static String cleanUpBlock(String rawblock) {
         int posC0 = rawblock.length() - 6;
-        if (posC0 < 0) return "";
         while ((posC0 >= 0) && (!rawblock.startsWith("C0", posC0))) {
             posC0 = posC0 - 2;
         }
+        if (posC0 < 0) return "";
         if ((posC0 == 0) && (!rawblock.startsWith("C0"))) return "";
         else return rawblock.substring(posC0);
     }
