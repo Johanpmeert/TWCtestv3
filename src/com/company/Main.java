@@ -39,6 +39,8 @@ public class Main {
     static int currentTWCUsedAmps = -1;
     static long startTime;
     static volatile boolean programStopCalled = false;
+    static boolean respondToLinkready = false;
+    static String firstHeartBeat;
     // Logging
     static Logger logger = Logger.getLogger("MyLog");
     static boolean logging = true;
@@ -139,9 +141,9 @@ public class Main {
             logger.info("Slave linkready block received " + block);
             logger.info("SlaveId " + slaveId + ", SlaveSign " + slaveSign + ", max amps " + maxAmps);
         }
-        String firstHeartbeat = prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
-        if (logging) logger.info("Sending heartbeat block " + firstHeartbeat);
-        sendBlock(comPort, firstHeartbeat);
+        firstHeartBeat = prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
+        if (logging) logger.info("Sending heartbeat block " + firstHeartBeat);
+        sendBlock(comPort, firstHeartBeat);
         startTime = System.nanoTime();
         while (!programStopCalled) {
             block = getNextBlock(comPort);
@@ -203,6 +205,12 @@ public class Main {
     }
 
     public static void respondToBlock(SerialPort sp, String block) throws InterruptedException {
+        if (respondToLinkready) {
+            sendBlock(sp, firstHeartBeat);
+            if (logging) logger.info("Responding to LinkReady from slave");
+            respondToLinkready = false;
+            return;
+        }
         Thread.sleep(2000);
         int waitingTime = (int) ((System.nanoTime() - startTime) / 1e9);
         int oldAmps = currentTWCamps;
@@ -244,7 +252,7 @@ public class Main {
             String cleanBlock = cleanUpBlock(block);
             if (isValidBlock(cleanBlock)) {
                 if (logging) logger.info("Block received " + cleanBlock);
-                return block;
+                return cleanBlock;
             } else {
                 if (logging) logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
                 block = ""; // drop failed block;
