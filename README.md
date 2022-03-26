@@ -10,7 +10,8 @@ Basically the program has 3 functions:
 2. A second thread communicates with an SMA Sunny home manager or SMA energy meter to find out the power consumption from the grid
 3. The main thread uses an RS485 port to show itself as as master to a Tesla wall charger (generation 2) and send commands to the slave
 
-You can stop the program by calling the website like xx.xx.xx.xx:8085/endprogram
+You can stop the program by calling the website like xx.xx.xx.xx:8085/endprogram.
+
 Logging can be started or stopped by using /loggingoff and /loggingon
 
 You can set the maximum power drawn from the grid.
