@@ -17,7 +17,7 @@ You can set the maximum power drawn from the grid.
 The program will instruct the Tesla wall charger (set as slave) so that the power consumption from the grid never exceeds this set value.
 This will work even with additional injection by solar panels or home batteries. It uses 30 second intervals to regulate the power draw.
 
-From experience you do not want to wait for responses from tghe TWC slave before sending a command. Otherwise there will be timeouts and the charger will stop/restart the charging process every few minutes. The most important thing is a steady stream of commands. Once every minute a command to re-set the charging amps, all the other can be command 0 (no change).
+From experience you do not want to wait for responses from the TWC slave before sending a command. Otherwise there will be timeouts and the charger will stop/restart the charging process every few minutes. The most important thing is a steady stream of commands. Once every minute a command to re-set the charging amps, all the other can be command 0 (no change).
 
 A log file (TWC.log) is created and contains any and all communication with the TWC. The same output is also given on the console.
 
