@@ -3,7 +3,7 @@
 This program is partially based upon the TWCmanager written in Python which you can find here on Github.
 
 But this is entirely written in JAVA and can run on any Java 1.8, including a raspberry pi zero.
-It uses only 1 external library: com.fazecast:JserialComm:2.9.0. This library does the RS485 communication and has a broad compatibility including arm v6 and v7 cpu.
+It uses only 1 external library: com.fazecast:JserialComm:2.9.1. This library does the RS485 communication and has a broad compatibility including arm v6 and v7 cpu.
 
 Basically the program has 3 functions:
 1. A background thread runs a super-small webserver so you can view the status remotely (standard on port 8085)
