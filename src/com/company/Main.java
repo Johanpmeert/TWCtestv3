@@ -34,12 +34,12 @@ public class Main {
     static String slaveSign;
     static int maxAmps = 0; // read-in from slave
     static volatile double currentPowerConsumption = 0.0;
-    static volatile double cuurentSolarPanelPower = 0.0;
+    static final double MAX_AMP_STEP_SIZE = 3;
+    static final int UPDATE_INTERVAL_SEC = 60;
     static int currentTWCamps = 8;
     static int currentTWCUsedAmps = -1;
     static long startTime;
     static volatile boolean programStopCalled = false;
-    static boolean respondToLinkready = false;
     static String firstHeartBeat;
     // Logging
     static Logger logger = Logger.getLogger("MyLog");
@@ -129,6 +129,12 @@ public class Main {
         comPort.setRs485ModeParameters(true, false, 5, 5);
         comPort.openPort();
         if (logging) logger.info("Port " + RS485_PORT + " opened");
+        // send master_linkready2 3 times
+        String linkReady2 = buildBlock("FBE2" + MASTER_ID + MASTER_SIGN + "0000000000000000");
+        for (int teller = 0; teller < 3; teller++) {
+            if (logging) logger.info("Sending linkready2 " + linkReady2);
+            sendBlock(comPort, linkReady2);
+        }
         // Get first block
         String block;
         do {
@@ -141,7 +147,7 @@ public class Main {
             logger.info("Slave linkready block received " + block);
             logger.info("SlaveId " + slaveId + ", SlaveSign " + slaveSign + ", max amps " + maxAmps);
         }
-        firstHeartBeat = prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
+        firstHeartBeat = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
         if (logging) logger.info("Sending heartbeat block " + firstHeartBeat);
         sendBlock(comPort, firstHeartBeat);
         startTime = System.nanoTime();
@@ -155,6 +161,7 @@ public class Main {
     }
 
     public static void displayBlockProperties(String block) {
+        if (block.isEmpty()) return;
         String strippedBlock = deEscapeBlock(block.substring(2, 34));
         if (strippedBlock.startsWith("FDE0")) {
             String dataBlock = strippedBlock.substring(12, strippedBlock.length() - 2);
@@ -205,58 +212,51 @@ public class Main {
     }
 
     public static void respondToBlock(SerialPort sp, String block) throws InterruptedException {
-        if (respondToLinkready) {
-            sendBlock(sp, firstHeartBeat);
-            if (logging) logger.info("Responding to LinkReady from slave");
-            respondToLinkready = false;
-            return;
-        }
-        Thread.sleep(2000);
         int waitingTime = (int) ((System.nanoTime() - startTime) / 1e9);
+        String blockToSend;
         int oldAmps = currentTWCamps;
-        if (waitingTime > 45) {  // only allow changing amps every 45 seconds
+        if (waitingTime > UPDATE_INTERVAL_SEC) {  // only allow changing amps every xx seconds
             startTime = System.nanoTime(); // reset the timecounter
-            double differenceInAmps;// 1.44e-3 = 1/(400*sqrt(3))
-            if ((currentTWCUsedAmps == -1) || (Math.abs(currentTWCamps - currentTWCUsedAmps) < 2)) {
-                differenceInAmps = (MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3;
+            int difference = (int) Math.round((MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3); // 1.44e-3 = 1/(400*sqrt(3))
+            if (difference > MAX_AMP_STEP_SIZE) {
+                currentTWCamps += MAX_AMP_STEP_SIZE;
+            } else if (difference < -MAX_AMP_STEP_SIZE) {
+                currentTWCamps -= MAX_AMP_STEP_SIZE;
             } else {
-                differenceInAmps = (MAX_POWER_FROM_MAINS - currentTWCamps * 400 * Math.sqrt(3.0)) * 1.44e-3;
+                currentTWCamps += difference;
             }
-            currentTWCamps = currentTWCamps + (int) Math.round(differenceInAmps);
             if (currentTWCamps < MIN_CHARGING_AMPS) currentTWCamps = 0;
-            if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
+            else if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
             if (logging) logger.info("Charging current change from " + oldAmps + " A to " + currentTWCamps + " A");
+            blockToSend = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
         } else {
+            blockToSend = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 0, 0));
             if (logging)
                 logger.info("Charging current kept at " + currentTWCamps + " A, wait time " + waitingTime + " sec");
         }
-        String blockToSend = prepareBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
         sendBlock(sp, blockToSend);
         if (logging) logger.info("Sending block " + blockToSend);
     }
 
     public static String getNextBlock(SerialPort sp) throws InterruptedException {
-        String block = "";
-        while (true) { // only exit the loop when a valid block is found, else log it and retry
-            do {
-                while (sp.bytesAvailable() == -1) { // wait for something to come in
-                    Thread.sleep(250);
-                }
-                Thread.sleep(250); // let data come in
-                int bytesInBuffer = sp.bytesAvailable();
-                byte[] readBuffer = new byte[bytesInBuffer];
-                sp.readBytes(readBuffer, readBuffer.length);
-                block = block + byteArrayToHexString(readBuffer);
-            }
-            while (!block.endsWith("C0FC"));
-            String cleanBlock = cleanUpBlock(block);
-            if (isValidBlock(cleanBlock)) {
-                if (logging) logger.info("Block received " + cleanBlock);
-                return cleanBlock;
-            } else {
-                if (logging) logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
-                block = ""; // drop failed block;
-            }
+        // Waits for something to be received and an additional 0.25s for the datra to come in
+        // After that analyses what came in and returns a valid or an empty block
+        while (sp.bytesAvailable() == -1) { // wait for something to come in
+            Thread.sleep(50);
+        }
+        Thread.sleep(250); // let data come in
+        int bytesInBuffer = sp.bytesAvailable();
+        byte[] readBuffer = new byte[bytesInBuffer];
+        sp.readBytes(readBuffer, readBuffer.length);
+        String block = byteArrayToHexString(readBuffer);
+        String cleanBlock = cleanUpBlock(block);
+        if (isValidBlock(cleanBlock)) {
+            if (logging) logger.info("Block received " + cleanBlock);
+            return cleanBlock;
+        } else {
+            if ((logging) && (!cleanBlock.isEmpty()))
+                logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
+            return "";
         }
     }
 
@@ -266,12 +266,16 @@ public class Main {
     }
 
     public static String cleanUpBlock(String rawblock) {
+        int posC0FC = rawblock.lastIndexOf("C0FC");
+        if (posC0FC == -1) return "";
+        else {
+            rawblock = rawblock.substring(0, posC0FC + 4);
+        }
         int posC0 = rawblock.length() - 6;
         while ((posC0 >= 0) && (!rawblock.startsWith("C0", posC0))) {
             posC0 = posC0 - 2;
         }
-        if (posC0 < 0) return "";
-        if ((posC0 == 0) && (!rawblock.startsWith("C0"))) return "";
+        if ((posC0 < 0) || ((posC0 == 0) && (!rawblock.startsWith("C0")))) return "";
         else return rawblock.substring(posC0);
     }
 
@@ -327,14 +331,13 @@ public class Main {
         }
         sb.append(amps.toUpperCase());
         sb.append("00"); // byte 4
-        sb.append("00000000"); // byte 5-6-7-8 are empty
+        sb.append("0000000000"); // byte 5-6-7-8-9 are empty
         return sb.toString();
     }
 
     public static double decodeAmps(String amps) {
         int ampsI = Integer.parseInt(amps, 16);
-        double ampD = ((double) ampsI) / 100.0;
-        return ampD;
+        return ((double) ampsI) / 100.0;
     }
 
     public static String extractSlaveId(String test) {
@@ -355,7 +358,7 @@ public class Main {
         else return 0;
     }
 
-    public static String prepareBlock(String message) {
+    public static String buildBlock(String message) {
         // calculates byte checksum and add it to end
         // escapes the message
         // adds C0 to front of message
@@ -374,8 +377,6 @@ public class Main {
         sb.append("Current power consumption from mains: ").append(String.format("%5.0f", currentPowerConsumption)).append("W (").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A)").append(NEW_LINE);
         sb.append("Current power setting on TWC        : ").append(String.format("%5.0f", currentTWCamps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCamps)).append("A)").append(NEW_LINE);
         sb.append("Reported power consumption by TWC   : ").append(String.format("%5.0f", currentTWCUsedAmps * 693.0)).append("W (").append(String.format("%4.1f", (double) currentTWCUsedAmps)).append("A)").append(NEW_LINE).append(NEW_LINE);
-        //sb.append("Current amps from mains   : ").append(String.format("%4.1f", currentPowerConsumption / 692.0)).append("A").append(NEW_LINE);
-        //sb.append("Current amp setting on TWC: ").append(String.format("%4.1f", (double) currentTWCamps)).append("A").append(NEW_LINE).append(NEW_LINE);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         sb.append("Time stamp: ").append(dtf.format(LocalDateTime.now()));
         webResponse = sb.toString();
@@ -552,7 +553,7 @@ public class Main {
                         if (!request.startsWith("GET ") || !(request.endsWith(" HTTP/1.0") || request.endsWith(" HTTP/1.1"))) {
                             pout.print("HTTP/1.0 400 Bad Request" + NEW_LINE + NEW_LINE);
                         } else {
-                            if (request.startsWith("GET /endprogram")) programStopCalled=true;
+                            if (request.startsWith("GET /endprogram")) programStopCalled = true;
                             pout.print("HTTP/1.0 200 OK" + NEW_LINE + "Content-Type: text/plain" + NEW_LINE + "Date: " + new Date() + NEW_LINE + "Content-length: " + webResponse.length() + NEW_LINE + NEW_LINE + webResponse);
                         }
                         pout.close();
