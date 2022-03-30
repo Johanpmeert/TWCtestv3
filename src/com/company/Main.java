@@ -19,8 +19,9 @@ public class Main {
     // RS485 settings
     static String RS485_PORT; // raspberry Pi zero W
     // General system defaults
-    static double MAX_POWER_FROM_MAINS;  // in Watt
-    static final int MIN_CHARGING_AMPS = 6;
+    static double MAX_POWER_FROM_MAINS;  // Maximum power you want pulled in from mains, in Watt
+    static final int MIN_CHARGING_AMPS = 6; // Minimum charging below which you don't want charging, in Amps
+    static final int MAX_CAR_CHARGE = 24; // Maximum amps the car can charge at, in Amps
     static String MASTER_ID;
     static final String MASTER_SIGN = "77"; // not used at this time
     // Web server settings
@@ -154,7 +155,7 @@ public class Main {
         while (!programStopCalled) {
             block = getNextBlock(comPort);
             displayBlockProperties(block);
-            respondToBlock(comPort, block);
+            respondToBlock(comPort);
             updateWebServer();
         }
         if (logging) logger.info("Program stop called, closing all connections... ");
@@ -211,26 +212,30 @@ public class Main {
         }
     }
 
-    public static void respondToBlock(SerialPort sp, String block) throws InterruptedException {
+    public static void respondToBlock(SerialPort sp) throws InterruptedException {
         int waitingTime = (int) ((System.nanoTime() - startTime) / 1e9);
         String blockToSend;
         int oldAmps = currentTWCamps;
         if (waitingTime > UPDATE_INTERVAL_SEC) {  // only allow changing amps every xx seconds
             startTime = System.nanoTime(); // reset the timecounter
-            int difference = (int) Math.round((MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3); // 1.44e-3 = 1/(400*sqrt(3))
-            if (difference > MAX_AMP_STEP_SIZE) {
+            int availableAmps = (int) Math.round((MAX_POWER_FROM_MAINS - currentPowerConsumption) * 1.44e-3); // 1.44e-3 = 1/(400*sqrt(3))
+            if (availableAmps > MAX_AMP_STEP_SIZE) {
                 currentTWCamps += MAX_AMP_STEP_SIZE;
-            } else if (difference < -MAX_AMP_STEP_SIZE) {
+            } else if (availableAmps < -MAX_AMP_STEP_SIZE) {
                 currentTWCamps -= MAX_AMP_STEP_SIZE;
             } else {
-                currentTWCamps += difference;
+                currentTWCamps += availableAmps;
+            }
+            if (Math.abs(currentTWCUsedAmps) < 1) {  // car is not actually charging so availableAmps is set value
+                currentTWCamps = availableAmps;
             }
             if (currentTWCamps < MIN_CHARGING_AMPS) currentTWCamps = 0;
-            else if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
+            if (currentTWCamps > maxAmps) currentTWCamps = maxAmps;
+            if (currentTWCamps > MAX_CAR_CHARGE) currentTWCamps = MAX_CAR_CHARGE;
             if (logging) logger.info("Charging current change from " + oldAmps + " A to " + currentTWCamps + " A");
             blockToSend = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 9, currentTWCamps));
         } else {
-            blockToSend = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 0, 0));
+            blockToSend = buildBlock(assembleMasterHeartbeat(MASTER_ID, slaveId, 0, 0)); // send nochange command 0
             if (logging)
                 logger.info("Charging current kept at " + currentTWCamps + " A, wait time " + waitingTime + " sec");
         }
@@ -546,7 +551,7 @@ public class Main {
                         PrintStream pout = new PrintStream(out);
                         String request = in.readLine();
                         if (request == null) continue;
-                        while (true) {
+                        while (true) { // dump all the other input
                             String ignore = in.readLine();
                             if (ignore == null || ignore.length() == 0) break;
                         }
@@ -554,12 +559,15 @@ public class Main {
                             pout.print("HTTP/1.0 400 Bad Request" + NEW_LINE + NEW_LINE);
                         } else {
                             if (request.startsWith("GET /endprogram")) programStopCalled = true;
+                            else if (request.startsWith("GET /loggingoff")) logging = false;
+                            else if (request.startsWith("GET /loggingon")) logging = true;
                             pout.print("HTTP/1.0 200 OK" + NEW_LINE + "Content-Type: text/plain" + NEW_LINE + "Date: " + new Date() + NEW_LINE + "Content-length: " + webResponse.length() + NEW_LINE + NEW_LINE + webResponse);
                         }
                         pout.close();
                     } catch (Throwable tri) {
                         if (logging) logger.warning("Http error handling request: " + tri);
                     }
+                    connection.close();
                 }
             } catch (Throwable tr) {
                 if (logging) logger.warning("Could not start http server: " + tr);
