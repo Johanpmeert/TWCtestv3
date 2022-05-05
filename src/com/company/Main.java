@@ -294,14 +294,34 @@ public class Main {
     }
 
     public static String deEscapeBlock(String block) {
-        block = block.replaceAll("DBDC", "C0");
-        block = block.replaceAll("DBDD", "DB");
-        return block;
+        int counter = 0;
+        StringBuilder sb = new StringBuilder();
+        while (counter < block.length()) {
+            if (block.substring(counter).startsWith("DBDC")) {
+                sb.append("C0");
+                counter+=2;
+            } else if (block.substring(counter).startsWith("DBDD")) {
+                sb.append("DB");
+                counter+=2;
+            } else {
+                sb.append(block, counter, counter+2);
+            }
+            counter += 2;
+        }
+        return sb.toString();
     }
 
     public static String escapeBlock(String block) {
-        block = block.replaceAll("DB", "DBDD"); // this order is important, DB before C0
-        block = block.replaceAll("C0", "DBDC");
+        int counter = 0;
+        while (counter < block.length()) {
+            if (block.substring(counter).startsWith("DB")) {
+                block = block.substring(0, counter) + "DBDD" + block.substring(counter + 2);
+            }
+            counter += 2;
+        }
+        while ((block.contains("C0")) && (block.indexOf("C0") % 2 == 0)) {
+            block = block.replace("C0", "DBDC");
+        }
         return block;
     }
 
