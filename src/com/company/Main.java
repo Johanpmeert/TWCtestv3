@@ -244,10 +244,16 @@ public class Main {
     }
 
     public static String getNextBlock(SerialPort sp) throws InterruptedException {
-        // Waits for something to be received and an additional 0.25s for the datra to come in
+        // Waits for something to be received and an additional 0.25s for the data to come in
         // After that analyses what came in and returns a valid or an empty block
-        while (sp.bytesAvailable() == -1) { // wait for something to come in
-            Thread.sleep(50);
+        if (sp.bytesAvailable() == -1) {
+            logger.warning("Serial Port is closed, attempting to re-open");
+            sp.openPort();
+            logger.warning("Serial Port is re-opened");
+            return "";
+        }
+        while (sp.bytesAvailable() < 1) { // wait for something to come in
+            Thread.sleep(200);
         }
         Thread.sleep(250); // let data come in
         int bytesInBuffer = sp.bytesAvailable();
@@ -259,15 +265,18 @@ public class Main {
             if (logging) logger.info("Block received " + cleanBlock);
             return cleanBlock;
         } else {
-            if ((logging) && (!cleanBlock.isEmpty()))
+            if (!cleanBlock.isEmpty())
                 logger.warning("Block checksum failed " + block + " because of " + cleanBlock);
             return "";
         }
     }
 
     public static void sendBlock(SerialPort sp, String block) throws InterruptedException {
-        sp.writeBytes(hexStringToByteArray(block), block.length() / 2);
-        Thread.sleep(250);
+        try {
+            sp.writeBytes(hexStringToByteArray(block), block.length() / 2);
+            Thread.sleep(500);
+        } catch (Exception e) {
+        }
     }
 
     public static String cleanUpBlock(String rawblock) {
@@ -299,14 +308,14 @@ public class Main {
         while (counter < block.length()) {
             if (block.substring(counter).startsWith("DBDC")) {
                 sb.append("C0");
-                counter+=2;
+                counter += 4;
             } else if (block.substring(counter).startsWith("DBDD")) {
                 sb.append("DB");
-                counter+=2;
+                counter += 4;
             } else {
-                sb.append(block, counter, counter+2);
+                sb.append(block, counter, counter + 2);
+                counter += 2;
             }
-            counter += 2;
         }
         return sb.toString();
     }
